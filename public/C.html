@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon">
+  <title>CodeRoots</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- nice select -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+    
+    <script>
+      (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Ge7rEVO27E3JCfbrwjwxA";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    
+  </script>
+    <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0 !important;
+            background: #f8f9fa;
+            color: #222;
+            min-height: 100vh;
+            position: relative;
+            z-index: 0;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            text-align: center;
+            padding: 40px 0 26px 0;
+            font-size: 32px;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+            box-shadow: 0 2px 16px rgba(47, 128, 237, 0.14);
+            position: relative;
+            z-index: 5;
+        }
+        nav {
+            background: #0056b3;
+            padding: 28px 0 22px 0;
+            text-align: center;
+            position: relative;
+            z-index: 5;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 26px;
+            font-size: 19px;
+            margin: 7px 12px;
+            border-radius: 21px;
+            transition: background 0.2s, color 0.2s;
+            display: inline-block;
+            font-weight: 600;
+        }
+        nav a:hover, nav a.active {
+            background: #013970;
+            color: #ffc107;
+        }
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            margin: 54px auto 0 auto;
+            padding: 48px 2vw 47px 2vw;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 48px 0 rgba(0,0,0,0.13);
+            position: relative;
+            min-height: 90vh;
+            z-index: 10;
+        }
+        h2 {
+            color: #0957c1;
+            margin-top: 54px;
+            font-size: 2.3em;
+            letter-spacing: 1px;
+            font-weight: 700;
+            border-bottom: 3px solid #e3effc;
+            padding-bottom: 9px;
+            margin-bottom: 18px;
+            background: #e8f5ff;
+            border-radius: 7px 7px 0 0;
+            box-shadow: 0 3px 10px #ace0fb25;
+        }
+        section {
+            margin: 0 0 65px 0;
+            padding: 42px 7vw 32px 7vw !important;
+            border-bottom: 2.5px solid #e3effc;
+            background: #fafdff;
+            border-radius: 16px;
+            box-shadow: 0 2px 16px #e3f1fa33;
+            position: relative;
+            z-index: 12;
+            min-height: 180px;
+        }
+        section:last-child {
+            border-bottom: none;
+        }
+        pre, code {
+            font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace !important;
+            background: #07152c14 !important;
+            padding: 1em 1.5em;
+            border-radius: 8px;
+            font-size: 1.07em;
+            overflow-x: auto;
+            color: #1855a9 !important;
+            margin-bottom: 23px;
+            margin-top: 14px;
+            white-space: pre-wrap;
+            word-break: break-word;
+            border: 1.5px solid #b9daff;
+            box-shadow: 0 4px 12px #c8e1f930;
+            display: block;
+            z-index: 88;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background: #f7fbff !important;
+            margin: 19px 0 30px 0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            border: 1px solid #b6d4fa;
+            text-align: left;
+            padding: 14px 15px;
+            font-size: 1.03em;
+            z-index: 8;
+            background: #eaf5fd;
+        }
+        th {
+            background: #dff1fc !important;
+            color: #01498a;
+        }
+        ul, ol {
+            margin: 18px 0 18px 42px;
+            font-size: 1.08em;
+            line-height: 1.8;
+        }
+        .toc {
+            margin: 33px 0 48px 0;
+            background: #e8f1ff !important;
+            border-radius: 16px;
+            padding: 31px 38px 22px 38px;
+            box-shadow: 0 4px 12px #8ec9ff21;
+            z-index: 30;
+            position: relative;
+            border: 2px solid #bee5ff66;
+        }
+        .toc strong {
+            color: #007bff;
+            font-size: 1.19em;
+        }
+        .toc a {
+            display: inline-block;
+            margin: 10px 18px 0 0;
+            color: #0056b3;
+            font-size: 1.05em;
+            font-weight: 600;
+            text-decoration: underline;
+            padding: 4px 12px;
+            border-radius: 6px;
+            white-space: nowrap;
+            background: #e9f6ff;
+        }
+        .toc a:hover { color: #007bff; background: #cce7ff; }
+        footer {
+            text-align: center;
+            padding: 28px;
+            background: #007bff;
+            color: white;
+            font-size: 1.17em;
+            letter-spacing: 1.3px;
+            margin-top: 36px;
+            border-radius: 20px 20px 0 0;
+            z-index: 20;
+            position: relative;
+        }
+        /* Bootstrap or .hero_area override! */
+        .hero_area, .hero_bg_box, .header_section, .header_top, .header_bottom, .custom_nav-container {
+            z-index: 0 !important;
+            position: static !important;
+            background: none !important;
+        }
+        @media (max-width: 900px) {
+            .container { width: 99%; padding: 7px; }
+            nav a { padding: 10px 6px; font-size: 16px; margin: 3px; }
+            .toc { padding: 18px 7px; font-size: 1em; }
+            section { padding: 18px 2vw 13px 2vw !important; }
+            h2 { font-size: 1.5em; }
+        }
+        @media (max-width: 540px) {
+            .container { width: 100vw; padding: 0; }
+            section, .toc { padding: 2vw 0 2vw 0 !important; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Compact Minimal White Navbar Start -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background:#fff;box-shadow:0 1px 6px #0001;min-height:44px;padding-top:0;padding-bottom:0;">
+  <div class="container-fluid p-0">
+    <a class="navbar-brand" href="index.html" style="font-weight:600;font-size:1.14em;padding:0 14px 0 6px;letter-spacing:0.01em;color:#1d184c;">
+      <i class="fa fa-code" style="color:#2979ff;margin-right:5px;"></i>CodeRoots
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar"
+      aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation"
+      style="outline:none;border:none;padding:6px 12px;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+      <ul class="navbar-nav align-items-center mb-0">
+        <li class="nav-item mx-1">
+          <a class="nav-link p-2" href="index.html" style="color:#000000;">Home</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link p-2" href="about.html" style="color:#000000;">About</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link p-2" href="courses.html" style="color:#000000;">Courses</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link p-2" href="contact.html" style="color:#000000;">Contact Us</a>
+        </li>
+        <li class="nav-item ml-2 d-none d-md-block">
+          <a href="https://www.facebook.com/" target="_blank" title="Facebook" class="px-1"><i class="fa fa-facebook" style="color:#4267B2;"></i></a>
+          <a href="https://www.twitter.com/" target="_blank" title="Twitter" class="px-1"><i class="fa fa-twitter" style="color:#1DA1F2;"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn" class="px-1"><i class="fa fa-linkedin" style="color:#2867B2;"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" title="Instagram" class="px-1"><i class="fa fa-instagram" style="color:#E4405F;"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Compact Minimal White Navbar End -->
+<script src="code-editor-launcher.js"></script>
+<!-- Bootstrap JS for navbar toggle -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <header>Learn C Programming - Full Course</header>
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#setup">Setup</a>
+        <a href="#syntax">Syntax</a>
+        <a href="#variables">Variables</a>
+        <a href="#operators">Operators</a>
+        <a href="#conditions">Conditions</a>
+        <a href="#loops">Loops</a>
+        <a href="#arrays">Arrays</a>
+        <a href="#strings">Strings</a>
+        <a href="#functions">Functions</a>
+        <a href="#pointers">Pointers</a>
+        <a href="#structs">Structs &amp; Enums</a>
+        <a href="#fileio">File I/O</a>
+        <a href="#advanced">Advanced</a>
+        <a href="#tips">Tips</a>
+    </nav>
+    <div class="container">
+    <div class="toc">
+        <strong>Table of Contents:</strong>
+        <a href="#introduction">Introduction</a>
+        <a href="#setup">Environment Setup</a>
+        <a href="#syntax">Basic Syntax</a>
+        <a href="#variables">Variables</a>
+        <a href="#operators">Operators</a>
+        <a href="#conditions">Conditional Statements</a>
+        <a href="#loops">Loops</a>
+        <a href="#arrays">Arrays</a>
+        <a href="#strings">Strings</a>
+        <a href="#functions">Functions</a>
+        <a href="#pointers">Pointers</a>
+        <a href="#structs">Structs, Unions & Enums</a>
+        <a href="#fileio">File I/O</a>
+        <a href="#advanced">Advanced Topics</a>
+        <a href="#tips">Best Practices & Resources</a>
+    </div>
+
+    <section id="introduction">
+        <h2>Introduction to C</h2>
+        <p>C is a powerful, low-level programming language used for system and application software. Created in the early 1970s, it is the foundation for many modern languages like C++, Java, and Python. C is compiled, type-safe, and allows programmers direct control over memory.</p>
+        <ul>
+            <li>C is a foundational language that influences C++, Java, Python, and more.</li>
+            <li>Widely used for operating systems, embedded devices, and performance-critical software.</li>
+            <li>Gives deep control over system resources (memory, CPU).</li>
+            <li>Comes with a standardized library (stdio, stdlib, string, math, etc.).</li>
+            <li>Encourages logical thinking and structured programming skills.</li>
+        </ul>
+    </section>
+
+    <section id="setup">
+        <h2>Environment Setup</h2>
+        <p>To write and run C code, you need a C compiler like GCC, Clang, or software like Code::Blocks/Dev C++ (Windows) or you can use online IDEs.</p>
+        <ol>
+            <li><b>Install GCC</b>: <br>
+                <code>sudo apt update &amp;&amp; sudo apt install build-essential</code> (Linux)<br>
+                For Windows: Use <a href="https://www.mingw-w64.org/" target="_blank">MinGW-w64</a>.<br>
+            </li>
+            <li>Write code in any text editor, save with <code>.c</code> extension.</li>
+            <li>Compile: <code>gcc filename.c -o filename</code></li>
+            <li>Run: <code>./filename</code> or <code>filename.exe</code> (Windows)</li>
+        </ol>
+        <ul>
+          <li>C programs are written in text editors and saved with a <code>.c</code> extension.</li>
+          <li>Compilation translates your code to an executable file.</li>
+          <li>Errors and warnings are caught at compile time, not runtime.</li>
+          <li>Portable: C code can be run on many different hardware and OS, with slight tweaks.</li>
+        </ul>
+    </section>
+
+    <section id="syntax">
+        <h2>Basic C Syntax</h2>
+        <p>Each C program has one <code>main()</code> function. Statements end with semicolons. Code blocks are wrapped in curly braces.</p>
+        <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+        </pre>
+        <ul>
+            <li>All statements end with a semicolon <code>;</code>.</li>
+            <li>The <code>main()</code> function is the entry point of every C program.</li>
+            <li>Functions are declared before use, or a prototype is provided.</li>
+            <li>Curly braces <code>{}</code> define the start and end of code blocks.</li>
+        </ul>
+    </section>
+
+    <section id="variables">
+        <h2>Variables & Data Types</h2>
+        <p>Variables are named memory locations. They must be declared with a type. Common types:</p>
+        <table>
+            <tr><th>Type</th><th>Keyword</th><th>Example</th></tr>
+            <tr><td>Integer</td><td>int</td><td><code>int age = 25;</code></td></tr>
+            <tr><td>Float/Double</td><td>float/double</td><td><code>float score = 81.5;</code></td></tr>
+            <tr><td>Character</td><td>char</td><td><code>char letter = 'A';</code></td></tr>
+        </table>
+        <ul>
+            <li>C is statically typed: types must be declared.</li>
+            <li>Variables must be declared before use.</li>
+            <li>Variable names: can use letters, numbers, underscores but must not start with a digit.</li>
+            <li>Use <b>const</b> to declare constants, preventing accidental changes.</li>
+        </ul>
+    </section>
+
+    <section id="operators">
+        <h2>Operators</h2>
+        <p>Operators perform operations on variables and values.</p>
+        <table>
+            <tr><th>Category</th><th>Operators</th></tr>
+            <tr><td>Arithmetic</td><td><code>+  -  *  /  %</code></td></tr>
+            <tr><td>Relational</td><td><code>&gt;  &lt;  &gt;=  &lt;=  ==  !=</code></td></tr>
+            <tr><td>Logical</td><td><code>&amp;&amp;  ||  !</code></td></tr>
+            <tr><td>Assignment</td><td><code>=  +=  -=  *=  /=  %=</code></td></tr>
+        </table>
+        <pre>
+int a = 5, b = 2;
+printf("a + b = %d", a + b);
+        </pre>
+        <ul>
+            <li><b>Arithmetic:</b> For calculations.</li>
+            <li><b>Relational:</b> For comparisons (used in if, loops).</li>
+            <li><b>Logical:</b> For combining/comparing conditions.</li>
+            <li><b>Assignment:</b> For assigning/updating variable values.</li>
+            <li>Always check for operator precedence to avoid bugs.</li>
+        </ul>
+    </section>
+
+    <section id="conditions">
+        <h2>Conditional Statements</h2>
+        <p>C uses if, else if, else, and switch for decision making.</p>
+        <pre>
+int age = 20;
+if (age &gt;= 18) {
+    printf("Adult\n");
+} else {
+    printf("Minor\n");
+}
+        </pre>
+        <pre>
+char grade = 'B';
+switch (grade) {
+    case 'A': printf("Excellent\n"); break;
+    case 'B': printf("Good\n"); break;
+    default: printf("Try again\n");
+}
+        </pre>
+        <ul>
+            <li><code>if</code>: Executes a block if a condition is true.</li>
+            <li><code>else if</code>: For multiple conditions.</li>
+            <li><code>else</code>: Executes if none of the above are true.</li>
+            <li><code>switch</code>: Best for checking a variable against multiple constant values.</li>
+            <li>You can use nested conditions for more complex logic.</li>
+        </ul>
+    </section>
+
+    <section id="loops">
+        <h2>Loops in C</h2>
+        <p>Three types: <b>for</b>, <b>while</b>, and <b>do...while</b> loops.</p>
+        <pre>
+for (int i = 0; i &lt; 5; i++) {
+    printf("%d ", i);
+}
+        </pre>
+        <pre>
+int n = 0;
+while (n &lt; 3) {
+    printf("Loop %d\n", n);
+    n++;
+}
+        </pre>
+        <pre>
+int m = 0;
+do {
+    printf("%d\n", m);
+    m++;
+} while (m &lt; 2);
+        </pre>
+        <ul>
+            <li><b>For loops:</b> Best for known number of iterations.</li>
+            <li><b>While loops:</b> Best when the condition may change within the loop.</li>
+            <li><b>Do-while loops:</b> Always executes the loop body at least once.</li>
+            <li>Avoid infinite loops; make sure your condition eventually becomes false.</li>
+        </ul>
+    </section>
+
+    <section id="arrays">
+        <h2>Arrays</h2>
+        <p>Array is a collection of variables of the same data type.</p>
+        <pre>
+int numbers[5] = {1, 2, 3, 4, 5};
+printf("First: %d", numbers[0]);
+        </pre>
+        <ul>
+            <li>Indexed from 0.</li>
+            <li>Size must be known at compile-time (static arrays) unless using <code>malloc</code>.</li>
+            <li>Useful for batch operations, function arguments, etc.</li>
+        </ul>
+    </section>
+
+    <section id="strings">
+        <h2>Strings</h2>
+        <p>Strings in C are arrays of characters ending with a null character <code>\0</code>.</p>
+        <pre>
+char greeting[] = "Hello";
+printf("%s", greeting);
+        </pre>
+        <ul>
+            <li>Strings are character arrays; terminated by null <code>'\0'</code>.</li>
+            <li>Common operations: read with <code>scanf</code>, print with <code>printf</code>, manipulate with <code>strcpy</code>, <code>strlen</code> (from <code>string.h</code>).</li>
+            <li>Remember to allocate space for the null character.</li>
+        </ul>
+    </section>
+
+    <section id="functions">
+        <h2>Functions</h2>
+        <p>Functions are used to organize code. Each C program must have a main function.</p>
+        <pre>
+int sum(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int result = sum(7, 5);
+    printf("%d\n", result);
+    return 0;
+}
+        </pre>
+        <p>Functions can have parameters and a return type. Use <code>void</code> for no return value.</p>
+        <ul>
+            <li>Breaks complex programs into smaller, manageable blocks.</li>
+            <li>Avoid code repetition by reusing functions.</li>
+            <li>Functions can return values or be <code>void</code> for no return.</li>
+            <li>Pass variables by value (default) or with pointers (for by-reference-like behavior).</li>
+        </ul>
+    </section>
+
+    <section id="pointers">
+        <h2>Pointers</h2>
+        <p>Pointers are variables that store memory addresses.</p>
+        <pre>
+int x = 10;
+int *p = &x;
+printf("Value: %d, Address: %p", *p, p);
+        </pre>
+        <p>Pointers are essential for dynamic memory, arrays, and function arguments.</p>
+        <ul>
+            <li>Pointers point to memory locations.</li>
+            <li>Necessary for dynamic memory, strings, and efficient function argument passing.</li>
+            <li>Syntax: <code>int *p;</code> (declares pointer), <code>p = &amp;var;</code> (stores address).</li>
+            <li><b>Use with care!</b> Incorrect usage can cause crashes or bugs.</li>
+        </ul>
+    </section>
+
+    <section id="structs">
+        <h2>Structs, Unions &amp; Enums</h2>
+        <p><b>Structs</b> group different data types under a single name.</p>
+        <pre>
+struct Student {
+    int id;
+    char name[20];
+    float marks;
+};
+
+struct Student s1 = {1, "Alex", 82.5};
+printf("ID: %d, Name: %s", s1.id, s1.name);
+        </pre>
+        <p><b>Enums</b> assign names to integer constants:</p>
+        <pre>
+enum Week {Sun, Mon, Tue, Wed, Thu, Fri, Sat};
+enum Week today = Wed;
+printf("Day: %d", today); // Outputs 3
+        </pre>
+        <ul>
+            <li><b>Structs:</b> Group multiple related variables of different types.</li>
+            <li><b>Unions:</b> Similar to structs, but all members share the same memory (only one member can hold a value at once).</li>
+            <li><b>Enums:</b> List of named integer constants; makes code readable.</li>
+            <li>Good for modeling real-world entities and organizing code.</li>
+        </ul>
+    </section>
+
+    <section id="fileio">
+        <h2>File I/O</h2>
+        <p>C provides file operations using <code>fopen</code>, <code>fclose</code>, <code>fprintf</code>, <code>fscanf</code>, etc.</p>
+        <pre>
+FILE *fp = fopen("test.txt", "w");
+if (fp != NULL) {
+    fprintf(fp, "Hello, File!\n");
+    fclose(fp);
+}
+        </pre>
+        <pre>
+// Reading from a file
+char line[100];
+FILE *fp = fopen("test.txt", "r");
+if (fp != NULL) {
+    fgets(line, sizeof(line), fp);
+    printf("%s", line);
+    fclose(fp);
+}
+        </pre>
+        <ul>
+            <li>Files must be opened with <code>fopen()</code> and closed with <code>fclose()</code>.</li>
+            <li><code>fprintf</code> and <code>fscanf</code> for formatted writing/reading.</li>
+            <li><code>fgets</code> is safer than <code>gets</code> for reading strings.</li>
+            <li>Always check if file opening succeeded (pointer is not NULL).</li>
+        </ul>
+    </section>
+
+    <section id="advanced">
+        <h2>Advanced Topics</h2>
+        <p><b>Dynamic Memory Allocation</b> uses <code>malloc</code>, <code>calloc</code>, <code>realloc</code>, and <code>free</code> from <code>&lt;stdlib.h&gt;</code>.</p>
+        <pre>
+int *arr = (int*)malloc(5 * sizeof(int));
+if (arr != NULL) {
+    arr[0] = 10;
+    free(arr);
+}
+        </pre>
+        <p><b>Constants &amp; Macros</b>:</p>
+        <pre>
+#define PI 3.14159
+const int SIZE = 50;
+printf("%f", PI);
+        </pre>
+        <p>Use <b>header files</b> to organize reusable code and custom functions.</p>
+        <ul>
+            <li>Use <code>malloc</code>, <code>calloc</code>, <code>free</code> for dynamic memory.</li>
+            <li>Pointers and dynamic allocation make flexible data structures possible.</li>
+            <li>Macros (<code>#define</code>) let you write reusable symbolic constants or simple code logic.</li>
+            <li><b>Never</b> forget to free memory to avoid leaks.</li>
+            <li>Custom header files (<code>.h</code>) help organize code.</li>
+        </ul>
+    </section>
+
+    <section id="tips">
+        <h2>Best Practices &amp; Resources</h2>
+        <ul>
+            <li>Keep your code simple and readable; comment important logic.</li>
+            <li>Be mindful of array bounds and pointer arithmetic.</li>
+            <li>Regularly review code for memory leaks and logical errors.</li>
+            <li>Practice with small projects, experiment with all concepts above.</li>
+            <li>Use meaningful variable/function names.</li>
+            <li>Always initialize variables.</li>
+            <li>Free allocated memory to prevent leaks.</li>
+            <li>Use comments for clarity.</li>
+            <li>Practice by solving problems!</li>
+            <li><a href="https://www.tutorialspoint.com/cprogramming/index.htm" target="_blank">TutorialsPoint - C</a></li>
+            <li><a href="https://www.learn-c.org/" target="_blank">Learn-C.org</a></li>
+            <li><a href="https://en.cppreference.com/w/c" target="_blank">C Reference</a></li>
+        </ul>
+    </section>
+
+    </div>
+    <footer>
+        &copy; 2025 CodeRoots | Learn C Programming with Us
+    </footer>
+    <!-- Chatbase widget -->
+<script>
+  (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) };window.chatbase=new Proxy(window.chatbase,{get(target, prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="PFEDVxqYF7Mdy24s36Hf1";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load", onLoad)}})();
+</script>
+</body>
+</html>

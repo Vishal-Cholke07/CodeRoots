@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon">
+  <title>CodeRoots</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0 !important;
+            background: #f3e5f5;
+            color: #231942;
+            min-height: 100vh;
+            position: relative;
+            z-index: 0;
+        }
+        header {
+            background: #6a1b9a;
+            color: white;
+            text-align: center;
+            padding: 38px 0 24px 0;
+            font-size: 32px;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+            box-shadow: 0 2px 16px #6a1b9a22;
+            position: relative;
+            z-index: 5;
+        }
+        nav {
+            background: #4a148c;
+            padding: 25px 0 18px 0;
+            text-align: center;
+            position: relative;
+            z-index: 5;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 13px 24px;
+            font-size: 19px;
+            margin: 6px 10px;
+            border-radius: 21px;
+            transition: background 0.2s, color 0.2s;
+            display: inline-block;
+            font-weight: 600;
+        }
+        nav a:hover, nav a.active {
+            background: #311b4b;
+            color: #ffb74d;
+        }
+        .container {
+            width: 100%;
+            max-width: 1120px;
+            margin: 54px auto 0 auto;
+            padding: 48px 2vw 47px 2vw;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 48px 0 rgba(106,27,154,0.12);
+            position: relative;
+            min-height: 90vh;
+            z-index: 10;
+        }
+        h2 {
+            color: #6a1b9a;
+            margin-top: 54px;
+            font-size: 2.2em;
+            letter-spacing: 1px;
+            font-weight: 700;
+            border-bottom: 3px solid #dfbffd;
+            padding-bottom: 11px;
+            margin-bottom: 20px;
+            background: #ede7f6;
+            border-radius: 7px 7px 0 0;
+            box-shadow: 0 3px 10px #dcc6f720;
+        }
+        section {
+            margin: 0 0 68px 0;
+            padding: 42px 7vw 34px 7vw !important;
+            border-bottom: 2.5px solid #e1c0fe;
+            background: #fcf6ff;
+            border-radius: 16px;
+            box-shadow: 0 2px 16px #dac9f933;
+            position: relative;
+            z-index: 12;
+            min-height: 170px;
+        }
+        section:last-child {
+            border-bottom: none;
+        }
+        pre, code {
+            font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace !important;
+            background: #ede7f6 !important;
+            padding: 1em 1.5em;
+            border-radius: 8px;
+            font-size: 1.07em;
+            overflow-x: auto;
+            color: #6a1b9a !important;
+            margin-bottom: 23px;
+            margin-top: 14px;
+            white-space: pre-wrap;
+            word-break: break-word;
+            border: 1.5px solid #cba4f5;
+            box-shadow: 0 4px 12px #aa7ee930;
+            display: block;
+            z-index: 88;
+        }
+        ul, ol {
+            margin: 18px 0 18px 42px;
+            font-size: 1.08em;
+            line-height: 1.8;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background: #f7f4fb !important;
+            margin: 19px 0 30px 0;
+            border-radius: 9px;
+            overflow: hidden;
+        }
+        th, td {
+            border: 1px solid #d8b5fd;
+            text-align: left;
+            padding: 14px 15px;
+            font-size: 1.03em;
+            background: #f5e7f9;
+        }
+        th {
+            background: #e1bee7 !important;
+            color: #4a148c;
+        }
+        footer {
+            text-align: center;
+            padding: 28px;
+            background: #6a1b9a;
+            color: white;
+            font-size: 1.17em;
+            letter-spacing: 1.3px;
+            margin-top: 36px;
+            border-radius: 20px 20px 0 0;
+            z-index: 20;
+            position: relative;
+        }
+        @media (max-width: 900px) {
+            .container { width: 99%; padding: 7px; }
+            nav a { padding: 10px 6px; font-size: 16px; margin: 3px; }
+            section { padding: 18px 2vw 13px 2vw !important; }
+            h2 { font-size: 1.5em; }
+        }
+        @media (max-width: 540px) {
+            .container { width: 100vw; padding: 0; }
+            section { padding: 2vw 0 2vw 0 !important; }
+        }
+    </style>
+</head>
+<body>
+  <!-- Compact Minimal White Navbar Start -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background:#fff;box-shadow:0 1px 6px #0001;min-height:44px;padding-top:0;padding-bottom:0;">
+  <div class="container-fluid p-0">
+    <a class="navbar-brand" href="index.html" style="font-weight:600;font-size:1.14em;padding:0 14px 0 6px;letter-spacing:0.01em;color:#1d184c;">
+      <i class="fa fa-code" style="color:#2979ff;margin-right:5px;"></i>CodeRoots
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar"
+      aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation"
+      style="outline:none;border:none;padding:6px 12px;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+      <ul class="navbar-nav align-items-center mb-0">
+        <li class="nav-item mx-1">
+          <a class="nav-link p-2" href="index.html" style="color:#000000;">Home</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link p-2" href="about.html" style="color:#000000;">About</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link p-2" href="courses.html" style="color:#000000;">Courses</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link p-2" href="contact.html" style="color:#000000;">Contact Us</a>
+        </li>
+        <li class="nav-item ml-2 d-none d-md-block">
+          <a href="https://www.facebook.com/" target="_blank" title="Facebook" class="px-1"><i class="fa fa-facebook" style="color:#4267B2;"></i></a>
+          <a href="https://www.twitter.com/" target="_blank" title="Twitter" class="px-1"><i class="fa fa-twitter" style="color:#1DA1F2;"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn" class="px-1"><i class="fa fa-linkedin" style="color:#2867B2;"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" title="Instagram" class="px-1"><i class="fa fa-instagram" style="color:#E4405F;"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Compact Minimal White Navbar End -->
+<script src="code-editor-launcher.js"></script>
+<!-- Bootstrap JS for navbar toggle -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<header>Learn Java - Full Course</header>
+<nav>
+    <a href="#introduction">Introduction</a>
+    <a href="#install">Install & Setup</a>
+    <a href="#syntax">Java Syntax</a>
+    <a href="#datatypes">Data Types</a>
+    <a href="#operators">Operators</a>
+    <a href="#conversion">Type Conversion</a>
+    <a href="#control">Control Flow</a>
+    <a href="#functions">Methods</a>
+    <a href="#oop">OOP</a>
+    <a href="#inheritance">Inheritance</a>
+    <a href="#interfaces">Interfaces & Abstraction</a>
+    <a href="#collections">Collections</a>
+    <a href="#exception">Exceptions</a>
+    <a href="#fileio">File I/O</a>
+    <a href="#threads">Threads</a>
+    <a href="#libraries">Standard Libraries</a>
+    <a href="#bestpractices">Best Practices</a>
+    <a href="#resources">Further Reading</a>
+</nav>
+<div class="container">
+<section id="introduction">
+  <h2>Introduction to Java</h2>
+  <p><b>Java</b> is a statically typed, object-oriented programming language known for its platform independence, security, and reliability. Its "write once, run anywhere" philosophy is made possible by the Java Virtual Machine (JVM).</p>
+  <ul>
+    <li>Popular for web, Android, desktop, big data, scientific, and enterprise systems.</li>
+    <li>OpenJDK is the open-source reference implementation.</li>
+    <li>Runs on JVM so compiled bytecode can run on any supported OS.</li>
+    <li>Automatic garbage collection, strong standard library, huge ecosystem.</li>
+    <li>Used by Google, Netflix, banks, governments, and in millions of devices.</li>
+  </ul>
+</section>
+<section id="install">
+  <h2>Installation & Setup</h2>
+  <p>To start writing Java code, you need to install the JDK (Java Development Kit).</p>
+  <ul>
+    <li>Download JDK from <a href="https://adoptium.net/" target="_blank">Adoptium</a> (recommended), or <a href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank">Oracle</a>.</li>
+    <li>Verify installation with <code>java -version</code> and <code>javac -version</code> in your terminal/command prompt.</li>
+    <li>Use any IDE: <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA</a>, <a href="https://eclipse.org/" target="_blank">Eclipse</a>, <a href="https://netbeans.apache.org/" target="_blank">NetBeans</a>, or simple editors like VSCode.</li>
+    <li>Create and compile your first file:</li>
+  </ul>
+  <pre>
+// HelloWorld.java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, Java!");
+    }
+}
+  </pre>
+  <ul>
+    <li>To compile: <code>javac HelloWorld.java</code></li>
+    <li>To run: <code>java HelloWorld</code></li>
+  </ul>
+</section>
+<section id="syntax">
+  <h2>Java Basic Syntax</h2>
+  <p>Java code structure revolves around classes and methods. Every statement ends with <b>;</b>. Files must be named after the public class they contain.</p>
+  <ul>
+    <li>Public classes must match filename (<code>Main.java</code> has <code>public class Main</code>).</li>
+    <li><b>Main method:</b> <code>public static void main(String[] args)</code></li>
+    <li>Access modifiers: <b>public</b>, <b>private</b>, <b>protected</b> control visibility.</li>
+    <li>Use <code>//</code> for single-line and <code>/* ... */</code> for multi-line comments.</li>
+  </ul>
+  <pre>
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+  </pre>
+</section>
+<section id="datatypes">
+  <h2>Data Types in Java</h2>
+  <p>Java has both <b>primitive</b> and <b>reference</b> types. Arrays and Strings are fundamental structures, with many additional classes provided by Java’s API. See <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html" target="_blank">Java type reference</a>.</p>
+  <table>
+    <tr><th>Type</th><th>Description</th><th>Example</th></tr>
+    <tr><td><code>int</code></td><td>Integer (32-bit signed)</td><td><code>int age = 20;</code></td></tr>
+    <tr><td><code>double</code></td><td>Double-precision decimal</td><td><code>double pi = 3.14;</code></td></tr>
+    <tr><td><code>char</code></td><td>Single character (Unicode)</td><td><code>char c = 'A';</code></td></tr>
+    <tr><td><code>boolean</code></td><td>True/False</td><td><code>boolean b = false;</code></td></tr>
+    <tr><td><code>String</code></td><td>Text (object, not primitive!)</td><td><code>String name = "Sam";</code></td></tr>
+    <tr><td><code>int[]</code></td><td>Array of integers</td><td><code>int[] nums = {1,2,3};</code></td></tr>
+  </table>
+  <ul>
+    <li>Primitive types: <code>byte, short, int, long, float, double, char, boolean</code>.</li>
+    <li>Reference types: all class and array types.</li>
+    <li>Use <b>final</b> for constants: <code>final double PI = 3.14;</code></li>
+  </ul>
+</section>
+<section id="operators">
+  <h2>Operators</h2>
+  <p>Java supports rich operators for calculations, assignments, comparison, and logic.</p>
+  <table>
+    <tr><th>Category</th><th>Operators</th></tr>
+    <tr><td>Arithmetic</td><td><code>+ - * / % ++ --</code></td></tr>
+    <tr><td>Assignment</td><td><code>= += -= *= /= %=</code></td></tr>
+    <tr><td>Relational</td><td><code>&gt; &lt; &gt;= &lt;= == !=</code></td></tr>
+    <tr><td>Logical</td><td><code>&& || !</code></td></tr>
+    <tr><td>Bitwise</td><td><code>&amp; | ^ ~ &lt;&lt; &gt;&gt; &gt;&gt;&gt;</code></td></tr>
+  </table>
+  <pre>
+int a = 6, b = 3;
+System.out.println(a + b); // 9
+System.out.println(a > b); // true
+System.out.println((a > 5) && (b < 5)); // true
+  </pre>
+</section>
+<section id="conversion">
+  <h2>Type Conversion &amp; Wrappers</h2>
+  <p>Casting and wrapper classes allow conversion between types and between primitive types and classes (autoboxing).</p>
+  <ul>
+    <li>Automatic conversion from small (byte, short) to int, int to double, etc.</li>
+    <li>Manual (explicit) casting needed for narrowing conversions.</li>
+    <li>Wrapper classes: <code>Integer, Double, Boolean, Character, ...</code></li>
+    <li>Useful methods: <code>Integer.parseInt(), Double.toString(), ...</code></li>
+  </ul>
+  <pre>
+double x = 5.5;
+int y = (int) x; // y = 5
+String s = String.valueOf(y);
+Integer z = Integer.parseInt("42");
+  </pre>
+</section>
+<section id="control">
+  <h2>Control Flow in Java</h2>
+  <p>Control structures direct execution. Includes <b>if/else</b>, <b>switch</b> (supports Strings and enums), and loop constructs.</p>
+  <ul>
+    <li><b>if/else</b>: any boolean condition</li>
+    <li><b>switch</b>: works with int, char, String, enum</li>
+    <li><b>for, while, do..while</b>: general, conditional, and post-tested loops</li>
+    <li><b>for-each</b> loop: <code>for (String s : list) {...}</code></li>
+    <li><code>break</code> and <code>continue</code> modify loop behavior</li>
+  </ul>
+  <pre>
+int x = 10;
+if (x > 5) {
+    System.out.println("x is greater than 5");
+}
+for (int i = 0; i < 3; i++) {
+    if (i == 2) continue;
+    System.out.println(i);
+}
+  </pre>
+</section>
+<section id="functions">
+  <h2>Methods (Functions) in Java</h2>
+  <p>Java methods live inside classes and define actions. They can be <b>static</b> or <b>instance</b> methods, can be overloaded, and may accept any number of parameters.</p>
+  <ul>
+    <li>Methods have a return value or void.</li>
+    <li>Arguments can be primitive, object, or varargs <code>sum(int... nums)</code>.</li>
+    <li>Recursive methods are supported.</li>
+  </ul>
+  <pre>
+public class Main {
+    static int multiply(int a, int b) { return a * b; }
+    static int sum(int... values) {
+        int s = 0; for(int v: values) s += v;
+        return s;
+    }
+    public static void main(String[] args) {
+        System.out.println(multiply(5, 2)); // 10
+        System.out.println(sum(1,2,3,4)); // 10
+    }
+}
+  </pre>
+</section>
+<section id="oop">
+  <h2>OOP Principles in Java</h2>
+  <p>Java is centered on OOP: organizing code into classes and objects. OOP makes software modular, reusable, secure, and maintainable.</p>
+  <ul>
+    <li><b>Encapsulation</b>: Hide fields, expose via methods (<code>private</code> fields + <code>get/set</code>)</li>
+    <li><b>Abstraction</b>: Use abstract classes and interfaces to define behavior contracts</li>
+    <li><b>Inheritance</b>: Code reuse via <code>extends</code></li>
+    <li><b>Polymorphism</b>: One interface, many implementations (method overriding, interface usage)</li>
+  </ul>
+  <pre>
+class Person { protected String name; }
+class Student extends Person { int id; }
+Person p = new Student();
+  </pre>
+</section>
+<section id="inheritance">
+  <h2>Inheritance</h2>
+  <p>Allows new classes to use (and extend) properties and behavior from a parent (base) class.</p>
+  <ul>
+    <li>Use <code>extends</code> keyword for single inheritance.</li>
+    <li>Override methods using <code>@Override</code> annotation.</li>
+    <li>Use <code>super</code> to access parent methods/fields.</li>
+    <li>All classes ultimately extend <code>Object</code>.</li>
+  </ul>
+  <pre>
+class Animal { void speak() { System.out.println("Generic"); } }
+class Dog extends Animal {
+    @Override
+    void speak() { System.out.println("Bark"); }
+}
+Animal d = new Dog(); d.speak(); // Bark
+  </pre>
+</section>
+<section id="interfaces">
+  <h2>Interfaces &amp; Abstraction</h2>
+  <p>Interfaces allow multiple inheritance of type. Abstract classes share code but can't be directly instantiated.</p>
+  <ul>
+    <li>Use <code>interface</code> keyword. Implement with <code>implements</code>; support default methods (Java 8+).</li>
+    <li>Abstract class: keyword <code>abstract</code>, may contain implementation.</li>
+    <li>A class can <i>implement</i> many interfaces, but <i>extend</i> only one parent class.</li>
+  </ul>
+  <pre>
+interface Drawable { void draw(); }
+class Circle implements Drawable {
+    public void draw() { System.out.println("Circle"); }
+}
+abstract class Shape { abstract void area(); }
+  </pre>
+</section>
+<section id="collections">
+  <h2>Collections &amp; Generics</h2>
+  <p>Java Collections Framework provides dynamic containers (ArrayList, HashMap, HashSet, LinkedList, etc.). Generics ensure type-safety and clean code.</p>
+  <ul>
+    <li>Use <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html" target="_blank">List</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html" target="_blank">Map</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html" target="_blank">Set</a> for collections.</li>
+    <li>Enhanced for-loops for iterating.</li>
+    <li>Use Generics: <code>ArrayList&lt;String&gt; names = new ArrayList&lt;&gt;();</code></li>
+    <li>Lambda and stream APIs simplify processing from Java 8+.</li>
+  </ul>
+  <pre>
+import java.util.*;
+ArrayList<Integer> nums = new ArrayList<>();
+nums.add(2); nums.add(8);
+for(int n: nums) System.out.println(n);
+HashMap<String, Integer> scores = new HashMap<>();
+scores.put("Ram",90);
+System.out.println(scores.get("Ram"));
+  </pre>
+</section>
+<section id="exception">
+  <h2>Exception Handling</h2>
+  <p>Java uses try-catch blocks to handle errors without crashing the program. There are checked and unchecked exceptions.</p>
+  <ul>
+    <li>Use try-catch-finally to handle issues gracefully.</li>
+    <li>Throw exceptions with <code>throw</code>. Declare checked with <code>throws</code>.</li>
+    <li>Popular exceptions: <code>NullPointerException</code>, <code>IOException</code>, <code>IllegalArgumentException</code>.</li>
+    <li>Custom exceptions: extend <code>Exception</code> or <code>RuntimeException</code>.</li>
+  </ul>
+  <pre>
+try {
+    int x = 5/0;
+} catch (ArithmeticException e) {
+    System.out.println("Error: " + e.getMessage());
+} finally {
+    System.out.println("Always runs");
+}
+  </pre>
+</section>
+<section id="fileio">
+  <h2>File I/O</h2>
+  <p>Java can read/write files using the <code>java.io</code> and <code>java.nio</code> libraries. Always handle IOExceptions.</p>
+  <ul>
+    <li>Use <code>FileReader</code>, <code>BufferedReader</code> for reading; <code>FileWriter</code>, <code>PrintWriter</code> for writing.</li>
+    <li>Since Java 7+, use <code>try-with-resources</code> for auto-closing files.</li>
+  </ul>
+  <pre>
+import java.io.*;
+try(BufferedReader br = new BufferedReader(new FileReader("test.txt"))) {
+    String line;
+    while((line = br.readLine()) != null) {
+        System.out.println(line);
+    }
+} catch(IOException e) { e.printStackTrace(); }
+  </pre>
+</section>
+<section id="threads">
+  <h2>Threads &amp; Concurrency (Intro)</h2>
+  <p>Java supports true multithreading—multiple tasks can run in parallel. Use <b>Runnable</b> or extend <b>Thread</b> class. Learn <code>synchronized</code>, <code>Thread.sleep()</code>, and concurrency utilities for advanced work.</p>
+  <ul>
+    <li>Launch a thread: extend <code>Thread</code> or implement <code>Runnable</code>.</li>
+    <li>Coordinate access with <code>synchronized</code> or locks.</li>
+    <li>Use <code>ExecutorService</code> for advanced thread management (Java 5+).</li>
+  </ul>
+  <pre>
+class MyTask implements Runnable {
+    public void run() {
+        System.out.println("My thread running");
+    }
+}
+Thread t = new Thread(new MyTask());
+t.start();
+  </pre>
+</section>
+<section id="libraries">
+  <h2>Popular Standard Libraries &amp; APIs</h2>
+  <ul>
+    <li><code>String</code>: rich manipulation</li>
+    <li><code>Math</code>: math functions</li>
+    <li><code>Arrays</code>, <code>Collections</code>: sorting, searching</li>
+    <li><code>Scanner</code>: input handling from console or files</li>
+    <li><code>java.time</code> (Java 8+): modern date/time API</li>
+    <li><code>Random</code>: random numbers</li>
+    <li><code>System</code>: system-level methods</li>
+  </ul>
+  <pre>
+import java.util.*; import java.time.*;
+Random r = new Random();
+System.out.println(r.nextInt(100));
+System.out.println(LocalDate.now());
+  </pre>
+</section>
+<section id="bestpractices">
+  <h2>Best Practices</h2>
+  <ul>
+    <li>Use meaningful class/method/variable names (camelCase).</li>
+    <li>Keep each class in its own file for large projects.</li>
+    <li>Avoid "magic numbers"; define as constants.</li>
+    <li>Minimize use of <code>public</code> fields; prefer private + getters/setters.</li>
+    <li>Document your code with comments and Javadoc.</li>
+    <li>Immutability (final fields/objects) is safer for multi-threading.</li>
+    <li>Avoid using <code>null</code>—prefer Optionals when possible (Java 8+).</li>
+    <li>Handle exceptions gracefully, close resources, never ignore errors.</li>
+  </ul>
+</section>
+<section id="resources">
+  <h2>Further Reading &amp; Resources</h2>
+  <ul>
+    <li><a href="https://docs.oracle.com/javase/tutorial/" target="_blank">Oracle Java Tutorials</a></li>
+    <li><a href="https://www.geeksforgeeks.org/java/" target="_blank">GeeksforGeeks Java Programming</a></li>
+    <li><a href="https://www.w3schools.com/java/" target="_blank">W3Schools Java Tutorial</a></li>
+    <li><a href="https://www.codewars.com/collections/java-for-beginners" target="_blank">Codewars: Java Exercises</a></li>
+    <li><a href="https://www.hackerrank.com/domains/tutorials/10-days-of-java" target="_blank">HackerRank: 10 Days of Java</a></li>
+    <li><a href="https://javabrains.io/" target="_blank">Java Brains: YouTube Video Tutorials</a></li>
+    <li><a href="https://docs.oracle.com/en/java/javase/17/docs/api/index.html" target="_blank">Java 17 Standard Library Docs</a></li>
+    <li><a href="https://javarevisited.blogspot.com/2020/01/best-java-programming-books-and-courses.html" target="_blank">Best Java Books &amp; Learning Paths</a></li>
+    <li><a href="https://www.baeldung.com/learn-java" target="_blank">Baeldung Java Tutorials (Modern and Advanced)</a></li>
+    <li><a href="https://openjdk.org/projects/amber/guides/lvti-style-guide" target="_blank">Modern Java Coding Style Guide</a></li>
+  </ul>
+  <p>To progress, study lambdas, streams, modules, annotation, JavaFX/Swing (GUI), RESTful APIs, frameworks (Spring, Hibernate), and learn to write JUnit tests.</p>
+</section>
+</div>
+<footer>
+    &copy; 2025 CodeRoots | Learn Java with Us
+</footer>
+<!-- Chatbase widget -->
+<script>
+  (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) };window.chatbase=new Proxy(window.chatbase,{get(target, prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="PFEDVxqYF7Mdy24s36Hf1";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load", onLoad)}})();
+</script>
+</body>
+</html>

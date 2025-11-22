@@ -1,0 +1,67 @@
+.editor-widget {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #222;
+    color: #eee;
+    max-width: 660px;
+    margin: 12px auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 24px #0002;
+    padding: 0 0 16px 0;
+  }
+  .editor-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px 0 16px;
+  }
+  #language-select {
+    background: #333;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid #444;
+    padding: 2px 10px;
+    font-size: 1em;
+  }
+  #run-button {
+    background: #2979ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 7px 18px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.18s;
+    margin-left: 8px;
+  }
+  #run-button:hover {
+    background: #296cff;
+  }
+  .editor-area {
+    height: 320px;
+    width: 96%;
+    margin: 18px auto 8px auto;
+    border-radius: 7px;
+    overflow: hidden;
+    border: 1px solid #333;
+    background: #181818;
+  }
+  .output-section {
+    margin: 0 16px;
+    background: #181818;
+    border-radius: 4px;
+    padding: 10px;
+    min-height: 66px;
+    box-sizing: border-box;
+    border: 1px solid #292929;
+  }
+  #output {
+    margin: 2px 0 0 0;
+    color: #ace838;
+    font-size: 1.08em;
+    white-space: pre-wrap;
+    word-break: break-word;
+    max-height: 130px;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+  

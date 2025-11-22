@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon">
+  <title>CodeRoots</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0 !important;
+            background: #e3f2fd;
+            color: #0d2340;
+            min-height: 100vh;
+            position: relative;
+        }
+        header {
+            background: #0288d1;
+            color: white;
+            text-align: center;
+            padding: 38px 0 24px 0;
+            font-size: 32px;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+            box-shadow: 0 2px 16px #0288d141;
+            position: relative;
+        }
+        nav {
+            background: #0277bd;
+            padding: 25px 0 18px 0;
+            text-align: center;
+            position: relative;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 13px 24px;
+            font-size: 19px;
+            margin: 6px 10px;
+            border-radius: 21px;
+            transition: background 0.2s, color 0.2s;
+            display: inline-block;
+            font-weight: 600;
+        }
+        nav a:hover, nav a.active {
+            background: #014572;
+            color: #ffd180;
+        }
+        .container {
+            width: 100%;
+            max-width: 1150px;
+            margin: 54px auto 0 auto;
+            padding: 48px 2vw 47px 2vw;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 48px 0 #0288d11a;
+            position: relative;
+            min-height: 90vh;
+        }
+        h2 {
+            color: #0288d1;
+            margin-top: 54px;
+            font-size: 2.2em;
+            letter-spacing: 1px;
+            font-weight: 700;
+            border-bottom: 3px solid #b3e5fc;
+            padding-bottom: 11px;
+            margin-bottom: 18px;
+            background: #b3e5fc;
+            border-radius: 7px 7px 0 0;
+            box-shadow: 0 3px 10px #b3e5fc38;
+        }
+        section {
+            margin: 0 0 68px 0;
+            padding: 42px 7vw 34px 7vw !important;
+            border-bottom: 2.5px solid #81d4fa82;
+            background: #e3f8fd;
+            border-radius: 16px;
+            box-shadow: 0 2px 16px #b3e5fc55;
+            position: relative;
+            min-height: 170px;
+        }
+        section:last-child {
+            border-bottom: none;
+        }
+        pre, code {
+            font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace !important;
+            background: #b3e5fc !important;
+            padding: 1em 1.5em;
+            border-radius: 8px;
+            font-size: 1.07em;
+            overflow-x: auto;
+            color: #01579b !important;
+            margin-bottom: 23px;
+            margin-top: 14px;
+            white-space: pre-wrap;
+            word-break: break-word;
+            border: 1.5px solid #0288d178;
+            box-shadow: 0 4px 12px #0288d110;
+            display: block;
+        }
+        ul, ol {
+            margin: 18px 0 18px 42px;
+            font-size: 1.08em;
+            line-height: 1.8;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background: #e1f5fe;
+            margin: 19px 0 30px 0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th, td {
+            border: 1px solid #4fc3f7;
+            text-align: left;
+            padding: 14px 15px;
+            font-size: 1.03em;
+            background: #e3f2fd;
+        }
+        th {
+            background: #b3e5fc !important;
+            color: #01579b;
+        }
+        footer {
+            text-align: center;
+            padding: 28px;
+            background: #0288d1;
+            color: white;
+            font-size: 1.17em;
+            letter-spacing: 1.3px;
+            margin-top: 36px;
+            border-radius: 20px 20px 0 0;
+            position: relative;
+        }
+        @media (max-width: 900px) {
+            .container { width: 99%; padding: 7px; }
+            nav a { padding: 10px 6px; font-size: 16px; margin: 3px; }
+            section { padding: 18px 2vw 13px 2vw !important; }
+            h2 { font-size: 1.5em; }
+        }
+        @media (max-width: 540px) {
+            .container { width: 100vw; padding: 0; }
+            section { padding: 2vw 0 2vw 0 !important; }
+        }
+    </style>
+</head>
+<body>
+  <!-- Compact Minimal White Navbar Start -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background:#fff;box-shadow:0 1px 6px #0001;min-height:44px;padding-top:0;padding-bottom:0;">
+  <div class="container-fluid p-0">
+    <a class="navbar-brand" href="index.html" style="font-weight:600;font-size:1.14em;padding:0 14px 0 6px;letter-spacing:0.01em;color:#1d184c;">
+      <i class="fa fa-code" style="color:#2979ff;margin-right:5px;"></i>CodeRoots
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar"
+      aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation"
+      style="outline:none;border:none;padding:6px 12px;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+      <ul class="navbar-nav align-items-center mb-0">
+        <li class="nav-item mx-1">
+          <a class="nav-link p-2" href="index.html" style="color:#000000;">Home</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link p-2" href="about.html" style="color:#000000;">About</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link p-2" href="courses.html" style="color:#000000;">Courses</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link p-2" href="contact.html" style="color:#000000;">Contact Us</a>
+        </li>
+        <li class="nav-item ml-2 d-none d-md-block">
+          <a href="https://www.facebook.com/" target="_blank" title="Facebook" class="px-1"><i class="fa fa-facebook" style="color:#4267B2;"></i></a>
+          <a href="https://www.twitter.com/" target="_blank" title="Twitter" class="px-1"><i class="fa fa-twitter" style="color:#1DA1F2;"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn" class="px-1"><i class="fa fa-linkedin" style="color:#2867B2;"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" title="Instagram" class="px-1"><i class="fa fa-instagram" style="color:#E4405F;"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Compact Minimal White Navbar End -->
+<script src="code-editor-launcher.js"></script>
+<!-- Bootstrap JS for navbar toggle -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<header>Learn Swift - Full Course</header>
+<nav>
+    <a href="#introduction">Introduction</a>
+    <a href="#setup">Setup & Tools</a>
+    <a href="#syntax">Syntax & Variables</a>
+    <a href="#datatypes">Data Types & Optionals</a>
+    <a href="#conversion">Type Inference & Conversion</a>
+    <a href="#operators">Operators</a>
+    <a href="#control">Control Flow</a>
+    <a href="#functions">Functions</a>
+    <a href="#collections">Collections</a>
+    <a href="#optionals">Optionals</a>
+    <a href="#structs-classes">Structs vs Classes</a>
+    <a href="#oop">Swift OOP</a>
+    <a href="#errors">Error Handling</a>
+    <a href="#patterns">Modern Patterns</a>
+    <a href="#bestpractices">Best Practices</a>
+    <a href="#resources">Resources</a>
+</nav>
+<div class="container">
+<section id="introduction">
+  <h2>Introduction to Swift</h2>
+  <p><b>Swift</b> is Apple’s open-source, type-safe, and expressive language for iOS, macOS, watchOS, and tvOS. It is designed for speed and safety, blending the power of C and Objective-C with modern language features. Swift is fun and efficient, and it’s the best way to build Apple platform software today.</p>
+  <ul>
+    <li>Modern, concise syntax designed for readability and performance.</li>
+    <li>Memory safe: prevents null pointer bugs with optionals, enforces value initialization.</li>
+    <li>Used worldwide for iOS apps, Apple Watch, Mac desktops – with reach to open source.</li>
+    <li>Supported by a vibrant developer community and constantly improved by Apple.</li>
+    <li>Favorite for both prototyping and enterprise-grade apps.</li>
+  </ul>
+</section>
+<section id="setup">
+  <h2>Setup &amp; Tools</h2>
+  <p>Swift development is easiest with Apple’s <b>Xcode</b> IDE (macOS). Windows/Linux users can build and play with Swift via the <a href="https://swift.org/download/" target="_blank">Swift.org toolchain</a>. Learning is fun with <b>Swift Playgrounds</b> (macOS, iPad), or online playgrounds.</p>
+  <ul>
+    <li>Xcode is free and preferred for app dev: syntax highlighting, playgrounds, simulators, UI design.</li>
+    <li><a href="https://swiftfiddle.com/" target="_blank">swiftfiddle.com</a> and <a href="https://online.swiftplayground.run/" target="_blank">online.swiftplayground.run</a> allow quick code tests.</li>
+    <li>Install Swift CLI from Swift.org for command-line/VSCode workflow.</li>
+    <li>Write scripts in <code>.swift</code> files. Run <code>swift myfile.swift</code> or <code>swift repl</code> for interactive usage.</li>
+  </ul>
+  <pre>
+// Terminal
+swift --version
+// Xcode Playground
+print("Hello from Swift Playground!")
+  </pre>
+</section>
+<section id="syntax">
+  <h2>Syntax & Variables</h2>
+  <p>Swift’s syntax focuses on brevity, clarity, and type safety. All variables/constants must be explicitly declared. Swift makes heavy use of <b>inference</b>, so types need not always be spelled out. Immutability is encouraged.</p>
+  <ul>
+    <li><b>let</b> declares an immutable constant, <b>var</b> declares a mutable variable.</li>
+    <li>Semicolons are OPTIONAL & barely used; whitespace/indentation is meaningful.</li>
+    <li>String interpolation: <code>"Hello, \(name)!"</code></li>
+    <li>Single line comments <code>//</code>, multi-line <code>/* ... */</code></li>
+    <li>Identifiers (names) are Unicode-safe (emojis allowed!)</li>
+  </ul>
+  <pre>
+let language = "Swift" // constant
+var counter: Int = 0   // mutable variable
+var greeting = "Hello, world!" // inference
+  </pre>
+</section>
+<section id="datatypes">
+  <h2>Data Types & Optionals</h2>
+  <p>Every variable’s type must be clear. Swift includes powerful primitives, rich composite types, and <b>optionals</b> for safety. Types can be explicit or inferred, and the type system rejects inconsistencies at compile time.</p>
+  <ul>
+    <li><b>Basic types:</b> Int, Double, Float, Bool, String, Character.</li>
+    <li><b>Type annotations</b> (after <code>:</code>) are optional if value is obvious.</li>
+    <li><b>Collections:</b> Array, Set, Dictionary.</li>
+    <li><b>Optionals:</b> A variable that may/may not have a value. <code>var age: Int?</code></li>
+    <li><b>nil</b>: Absence of value (not the same as 0 or empty string)</li>
+    <li>All types are structs except classes.</li>
+  </ul>
+  <pre>
+let pi: Double = 3.14159
+var name: String = "Alex"
+var optionalNumber: Int? = nil
+var tags: [String] = []
+var user: [String: String] = [:]
+  </pre>
+</section>
+<section id="conversion">
+  <h2>Type Inference & Conversion</h2>
+  <p>Swift automatically infers the type if the assignment is clear. You can convert compatible types with initializers.</p>
+  <ul>
+    <li>Type annotation (<code>: Type</code>) only needed for clarity, not required if obvious.</li>
+    <li>Convert String to Int: <code>Int("42")</code> (returns optional Int?)</li>
+    <li>Convert Int to String: <code>String(42)</code></li>
+    <li>Be careful: forced unwrapping fails if conversion is invalid!</li>
+  </ul>
+  <pre>
+let strNumber = "5"
+if let n = Int(strNumber) {
+  print(n * 2) // 10
+}
+  </pre>
+</section>
+<section id="operators">
+  <h2>Operators</h2>
+  <ul>
+    <li>Arithmetic: <code>+ - * / %</code></li>
+    <li>Assignment: <code>= += -= *= /=</code></li>
+    <li>Comparison: <code>&lt; &gt; &lt;= &gt;= == !=</code></li>
+    <li>Logical: <code>&amp;&amp; || !</code></li>
+    <li>Range: <code>0...5</code> (inclusive); <code>0..<5</code> (exclusive)</li>
+    <li>Nil-coalescing: <code>a ?? b</code> (returns a if not nil, else b)</li>
+    <li>Identity: <code>===</code> (is identical object, for classes)</li>
+  </ul>
+  <pre>
+let a = 7, b = 3
+print(a % b)
+let input: String? = nil
+print(input ?? "No value")
+  </pre>
+</section>
+<section id="control">
+  <h2>Control Flow</h2>
+  <p>Swift improves classic C-family flow with pattern matching and safer constructs. Conditions must be booleans (not like JS/Python truthy/falsy).</p>
+  <ul>
+    <li>if, else if, else</li>
+    <li>switch (powerful: supports patterns, ranges, tuples, enums)</li>
+    <li>for-in loop, while, repeat-while</li>
+    <li>Use <code>guard</code> for early exits and safer code</li>
+    <li>Optional binding/unwrapping: <code>if let</code>, <code>guard let</code></li>
+    <li><code>break</code>, <code>continue</code> supported</li>
+  </ul>
+  <pre>
+for n in 1...3 {
+  print(n)
+}
+let name: String? = nil
+print(name ?? "Guest")
+  </pre>
+</section>
+<section id="functions">
+  <h2>Functions</h2>
+  <p>Swift’s functions are powerful: support default params, inout (ref) params, variadic args, nested/local functions, closures, multiple return types (tuples).</p>
+  <ul>
+    <li>Define with <code>func</code>; can omit return type if void.</li>
+    <li>Argument labels (external and internal) for clarity</li>
+    <li>Return tuple for multiple values</li>
+    <li>Swift closures (lambdas) are ubiquitous – e.g. sorted, map, callbacks</li>
+  </ul>
+  <pre>
+func greet(name: String = "Guest") {
+  print("Hello, \(name)")
+}
+greet()
+  </pre>
+</section>
+<section id="collections">
+  <h2>Collections</h2>
+  <p>Swift has three main collections: Array, Set, Dictionary, all value types (structs) and generics.</p>
+  <ul>
+    <li>Array: ordered, duplicates allowed</li>
+    <li>Set: unordered, unique values only</li>
+    <li>Dictionary: key-value mapping, fast lookup</li>
+    <li>For-in loop to iterate all; many functional methods: <code>map, filter, reduce</code></li>
+  </ul>
+  <pre>
+var nums = [1, 2, 3]
+nums.append(4)
+var names: Set = ["Amy", "Bob", "Amy"]
+let capitals = ["FR": "Paris", "UK": "London"]
+  </pre>
+</section>
+<section id="optionals">
+  <h2>Optionals</h2>
+  <p>Optionals represent a variable that could be nil or have a value—this is Swift's safety net against null pointer bugs.</p>
+  <ul>
+    <li>Declare with <code>?</code>: <code>var x: Int?</code></li>
+    <li>Must be unwrapped before used (with <code>if let</code>, <code>guard let</code>, <code>!</code>, or <code>??</code>)</li>
+    <li>Chaining: <code>user?.profile?.email</code></li>
+    <li>Fast, safe pattern for many real-world APIs and data flows.</li>
+  </ul>
+  <pre>
+var optional: Int? = nil
+if let value = optional {
+  print(value)
+} else {
+  print("No value!")
+}
+  </pre>
+</section>
+<section id="structs-classes">
+  <h2>Structs vs Classes</h2>
+  <p>Swift allows both struct and class types, but structs are value types (copied) and classes are reference types (shared reference). Most types in Swift stdlib are structs!</p>
+  <ul>
+    <li>Structs: value semantics, lightweight, no inheritance</li>
+    <li>Classes: reference semantics, support inheritance, deinitializers</li>
+    <li>Both: can have methods, computed properties, initializers</li>
+    <li>Protocol conformance, extensions work for both</li>
+  </ul>
+  <pre>
+struct Point { var x=0, y=0 }
+class Shape { var sides=0; init(sides:Int){ self.sides=sides } }
+  </pre>
+</section>
+<section id="oop">
+  <h2>Swift OOP</h2>
+  <p>Swift brings modern OOP and protocol-oriented programming:</p>
+  <ul>
+    <li>Inheritance: class-based, use <code>: Parent</code></li>
+    <li>Protocols: define methods/props requirement like interfaces, and can add default behaviors in extensions</li>
+    <li>Extensions: add methods to any type (even stdlib) without subclassing</li>
+    <li>Initializers: many options (designated/convenience, required, etc.)</li>
+    <li>Enums: very powerful—can have methods, associated values, conform to protocols</li>
+    <li>Static/class methods for type-level functionality</li>
+    <li>Operator overloading possible on value types</li>
+  </ul>
+  <pre>
+protocol Drawable { func draw() }
+extension Drawable {
+  func showDemo() { print("Demo") }
+}
+class Circle: Drawable {
+  func draw() { print("O") }
+}
+let c = Circle(); c.draw(); c.showDemo()
+  </pre>
+</section>
+<section id="errors">
+  <h2>Error Handling</h2>
+  <ul>
+    <li>Swift uses <code>do/try/catch</code> (and <code>throw</code>) for error management.</li>
+    <li>Functions/methods that can fail must be marked <code>throws</code></li>
+    <li><code>try?</code> returns optional (nil if error thrown), <code>try!</code> asserts no error will happen (unsafe!)</li>
+    <li>Error enums: define specific failure cases</li>
+  </ul>
+  <pre>
+enum FileError: Error { case missing, unreadable }
+func open(file: String) throws {
+  if file.isEmpty { throw FileError.missing }
+}
+do {
+  try open(file: "")
+} catch {
+  print("Error: \(error)")
+}
+  </pre>
+</section>
+<section id="patterns">
+  <h2>Modern Swift Patterns</h2>
+  <ul>
+    <li>map, filter, reduce, forEach, flatMap, compactMap on collections</li>
+    <li>Closures (lambda syntax): <code>{ (args) -> Return in ... }</code>; trailing closure syntax</li>
+    <li>Protocol-oriented, extension-oriented design: key to idiomatic Swift</li>
+    <li>Generics for reusable code (e.g. <code>func swap<T></code>)</li>
+    <li>Property observers, computed properties, subscripts</li>
+  </ul>
+  <pre>
+let numbers = [1,2,3,4].filter { $0 % 2 == 0 }
+  </pre>
+</section>
+<section id="bestpractices">
+  <h2>Best Practices</h2>
+  <ul>
+    <li>Always use <code>let</code> when you don’t need mutation</li>
+    <li>Prefer structs and value semantics for custom types for simple data models</li>
+    <li>Write concise, readable code with clear names</li>
+    <li>Take advantage of optionals, extensions, and protocols</li>
+    <li>Use guard/if-let for safe unwrapping</li>
+    <li>Document your code (Xcode’s Quick Help = <code>///</code> comments)</li>
+    <li>Rely on SwiftLint (<a href="https://realm.github.io/SwiftLint/" target="_blank">SwiftLint</a>) for style, never force unwrap unless certain</li>
+    <li>Test using XCTest; use Xcode for debugging</li>
+  </ul>
+</section>
+<section id="resources">
+  <h2>Swift Resources & Learning Links</h2>
+  <ul>
+    <li><a href="https://docs.swift.org/swift-book/" target="_blank">The Swift Programming Language (Official Apple Book—free web)</a></li>
+    <li><a href="https://swift.org/documentation/" target="_blank">Swift.org Documentation</a></li>
+    <li><a href="https://developer.apple.com/swift/" target="_blank">Apple Swift Developer Portal</a></li>
+    <li><a href="https://www.hackingwithswift.com/" target="_blank">Hacking With Swift (best project-based tutorials)</a></li>
+    <li><a href="https://www.raywenderlich.com/ios" target="_blank">Ray Wenderlich iOS & Swift Tutorials</a></li>
+    <li><a href="https://www.swiftbysundell.com/" target="_blank">Swift by Sundell (Modern best practices)</a></li>
+    <li><a href="https://youtube.com/watch?v=comQ1-x2a1Q" target="_blank">freeCodeCamp Swift for Beginners (4h video)</a></li>
+    <li><a href="https://www.youtube.com/@CodeWithChris" target="_blank">CodeWithChris YouTube channel</a></li>
+    <li><a href="https://www.swiftfiddle.com/" target="_blank">SwiftFiddle (online playground)</a></li>
+    <li><a href="https://exercism.org/tracks/swift" target="_blank">Swift Practice Problems @ Exercism</a></li>
+    <li><a href="https://swift.gg/" target="_blank">swift.gg (Chinese, curated Swift resources)</a></li>
+    <li><a href="https://onmyway133.com/pages/swift-learning-resources/" target="_blank">Swift Learning Resources List</a></li>
+  </ul>
+  <p>To advance: Explore iOS/SwiftUI, async/await, Combine, unit testing, mobile UI, <b>protocol-oriented programming</b>, and open-source Swift projects.</p>
+</section>
+</div>
+<footer>
+    &copy; 2025 CodeRoots | Learn Swift with Us
+</footer>
+<!-- Chatbase widget -->
+<script>
+  (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) };window.chatbase=new Proxy(window.chatbase,{get(target, prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="PFEDVxqYF7Mdy24s36Hf1";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load", onLoad)}})();
+</script>
+</body>
+</html>

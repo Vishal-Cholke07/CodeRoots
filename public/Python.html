@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon">
+  <title>CodeRoots</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0 !important;
+            background: #fffde7;
+            color: #4e2607;
+            min-height: 100vh;
+            position: relative;
+        }
+        header {
+            background: #ffb300;
+            color: white;
+            text-align: center;
+            padding: 38px 0 24px 0;
+            font-size: 32px;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+            box-shadow: 0 2px 16px #ffb30022;
+            position: relative;
+        }
+        nav {
+            background: #ff6f00;
+            padding: 25px 0 18px 0;
+            text-align: center;
+            position: relative;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 13px 24px;
+            font-size: 19px;
+            margin: 6px 10px;
+            border-radius: 21px;
+            transition: background 0.2s, color 0.2s;
+            display: inline-block;
+            font-weight: 600;
+        }
+        nav a:hover, nav a.active {
+            background: #7f5100;
+            color: #ffe082;
+        }
+        .container {
+            width: 100%;
+            max-width: 1150px;
+            margin: 54px auto 0 auto;
+            padding: 48px 2vw 47px 2vw;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 48px 0 #ffb3002b;
+            position: relative;
+            min-height: 90vh;
+        }
+        h2 {
+            color: #ff9800;
+            margin-top: 54px;
+            font-size: 2.2em;
+            letter-spacing: 1px;
+            font-weight: 700;
+            border-bottom: 3px solid #ffe082;
+            padding-bottom: 11px;
+            margin-bottom: 18px;
+            background: #ffe0b2;
+            border-radius: 7px 7px 0 0;
+            box-shadow: 0 3px 10px #ffe08251;
+        }
+        section {
+            margin: 0 0 68px 0;
+            padding: 42px 7vw 34px 7vw !important;
+            border-bottom: 2.5px solid #ffe082ab;
+            background: #fffde7;
+            border-radius: 16px;
+            box-shadow: 0 2px 16px #ffecb345;
+            position: relative;
+            min-height: 170px;
+        }
+        section:last-child {
+            border-bottom: none;
+        }
+        pre, code {
+            font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace !important;
+            background: #fff8e1 !important;
+            padding: 1em 1.5em;
+            border-radius: 8px;
+            font-size: 1.07em;
+            overflow-x: auto;
+            color: #e65100 !important;
+            margin-bottom: 23px;
+            margin-top: 14px;
+            white-space: pre-wrap;
+            word-break: break-word;
+            border: 1.5px solid #fed17b;
+            box-shadow: 0 4px 12px #ffc10728;
+            display: block;
+        }
+        ul, ol {
+            margin: 18px 0 18px 42px;
+            font-size: 1.08em;
+            line-height: 1.8;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background: #ffeecc;
+            margin: 19px 0 30px 0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th, td {
+            border: 1px solid #ffb84d;
+            text-align: left;
+            padding: 14px 15px;
+            font-size: 1.03em;
+            background: #fffde7;
+        }
+        th {
+            background: #ffe0b2 !important;
+            color: #d97706;
+        }
+        footer {
+            text-align: center;
+            padding: 28px;
+            background: #ff9800;
+            color: white;
+            font-size: 1.17em;
+            letter-spacing: 1.3px;
+            margin-top: 36px;
+            border-radius: 20px 20px 0 0;
+            position: relative;
+        }
+        @media (max-width: 900px) {
+            .container { width: 99%; padding: 7px; }
+            nav a { padding: 10px 6px; font-size: 16px; margin: 3px; }
+            section { padding: 18px 2vw 13px 2vw !important; }
+            h2 { font-size: 1.5em; }
+        }
+        @media (max-width: 540px) {
+            .container { width: 100vw; padding: 0; }
+            section { padding: 2vw 0 2vw 0 !important; }
+        }
+    </style>
+</head>
+<body>
+  <!-- Compact Minimal White Navbar Start -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background:#fff;box-shadow:0 1px 6px #0001;min-height:44px;padding-top:0;padding-bottom:0;">
+  <div class="container-fluid p-0">
+    <a class="navbar-brand" href="index.html" style="font-weight:600;font-size:1.14em;padding:0 14px 0 6px;letter-spacing:0.01em;color:#1d184c;">
+      <i class="fa fa-code" style="color:#2979ff;margin-right:5px;"></i>CodeRoots
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar"
+      aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation"
+      style="outline:none;border:none;padding:6px 12px;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+      <ul class="navbar-nav align-items-center mb-0">
+        <li class="nav-item mx-1">
+          <a class="nav-link p-2" href="index.html" style="color:#2d2175;">Home</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link p-2" href="about.html" style="color:#2d2175;">About</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link p-2" href="courses.html" style="color:#2d2175;">Courses</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link p-2" href="contact.html" style="color:#2d2175;">Contact Us</a>
+        </li>
+        <li class="nav-item ml-2 d-none d-md-block">
+          <a href="https://www.facebook.com/" target="_blank" title="Facebook" class="px-1"><i class="fa fa-facebook" style="color:#4267B2;"></i></a>
+          <a href="https://www.twitter.com/" target="_blank" title="Twitter" class="px-1"><i class="fa fa-twitter" style="color:#1DA1F2;"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn" class="px-1"><i class="fa fa-linkedin" style="color:#2867B2;"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" title="Instagram" class="px-1"><i class="fa fa-instagram" style="color:#E4405F;"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Compact Minimal White Navbar End -->
+<script src="code-editor-launcher.js"></script>
+<!-- Bootstrap JS for navbar toggle -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<header>Learn Python - Full Course</header>
+<nav>
+    <a href="#introduction">Introduction</a>
+    <a href="#setup">Setup</a>
+    <a href="#syntax">Syntax & Indentation</a>
+    <a href="#datatypes">Data Types</a>
+    <a href="#conversion">Type Conversion</a>
+    <a href="#operators">Operators</a>
+    <a href="#control">Control Flow</a>
+    <a href="#functions">Functions</a>
+    <a href="#collections">Collections</a>
+    <a href="#strings">Strings</a>
+    <a href="#comprehensions">Comprehensions</a>
+    <a href="#oop">OOP</a>
+    <a href="#exceptions">Exception Handling</a>
+    <a href="#fileio">File I/O</a>
+    <a href="#modules">Modules</a>
+    <a href="#decorators">Decorators</a>
+    <a href="#generators">Generators</a>
+    <a href="#libraries">Popular Libraries</a>
+    <a href="#bestpractices">Best Practices</a>
+    <a href="#resources">Resources</a>
+</nav>
+<div class="container">
+<section id="introduction">
+  <h2>Introduction to Python</h2>
+  <p><b>Python</b> is a top open-source programming language, known for its clarity and enormous ecosystem. Created by Guido van Rossum in 1991. Used everywhere: web, data science, automation, AI, games, desktop, and more.</p>
+  <ul>
+    <li>High-level and easy to read—great for beginners and pros.</li>
+    <li>Dynamically typed, interpreted (no compile step required).</li>
+    <li>Huge library support (standard + PyPI packages).</li>
+    <li>Widely used in Google, NASA, Spotify, Netflix, YouTube, academia.</li>
+  </ul>
+</section>
+<section id="setup">
+  <h2>Setup & Installation</h2>
+  <ul>
+    <li>Download from <a href="https://www.python.org/downloads/" target="_blank">python.org</a> (choose latest 3.x version).</li>
+    <li>Recommended IDEs: <a href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm</a>, <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>, <a href="https://thonny.org/" target="_blank">Thonny</a>, or simple editors.</li>
+    <li>Run code: terminal (<code>python script.py</code>), IDLE, or online (<a href="https://replit.com/languages/python3" target="_blank">Replit</a>, <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">Programiz</a>).</li>
+    <li>REPL mode: run <code>python</code> in terminal for interactive prompt.</li>
+    <li><b>pip</b>: Python package manager for third-party modules.</li>
+  </ul>
+  <pre>
+$ python --version
+$ pip install pandas
+  </pre>
+</section>
+<section id="syntax">
+  <h2>Syntax & Indentation</h2>
+  <ul>
+    <li>Uses colons (<code>:</code>) and indentation to mark blocks (not braces).</li>
+    <li>Consistent 4-space indent standard (see <a href="https://peps.python.org/pep-0008/" target="_blank">PEP8</a>).</li>
+    <li>Comments: <code># single line</code>, <code>'''multi
+line'''</code>.</li>
+    <li>No end-statement character; end of line means end of statement.</li>
+  </ul>
+  <pre>
+# This is a comment
+def greet(name):
+    print(f"Hello, {name}")
+  </pre>
+</section>
+<section id="datatypes">
+  <h2>Data Types</h2>
+  <table>
+    <tr><th>Type</th><th>Description</th><th>Example</th></tr>
+    <tr><td>int</td><td>Integer numbers</td><td><code>x = 20</code></td></tr>
+    <tr><td>float</td><td>Decimal numbers</td><td><code>pi = 3.14</code></td></tr>
+    <tr><td>str</td><td>Text (string)</td><td><code>s = 'hello'</code></td></tr>
+    <tr><td>bool</td><td>Boolean value</td><td><code>b = False</code></td></tr>
+    <tr><td>list</td><td>Ordered, mutable sequence</td><td><code>nums = [1,2,3]</code></td></tr>
+    <tr><td>tuple</td><td>Ordered, immutable sequence</td><td><code>coords = (3,4)</code></td></tr>
+    <tr><td>set</td><td>Unordered, unique values</td><td><code>colors = {'red','blue'}</code></td></tr>
+    <tr><td>dict</td><td>Key-value mappings</td><td><code>d = {'a': 1}</code></td></tr>
+    <tr><td>None</td><td>Null type</td><td><code>x = None</code></td></tr>
+    <tr><td>bytes/bytearray</td><td>Binary data</td><td><code>b = b'abc'</code></td></tr>
+  </table>
+  <ul>
+    <li>Mutable: list, dict, set, bytearray. Immutable: int, float, str, tuple, frozenset, bytes.</li>
+    <li>Get type: <code>type(x)</code></li>
+  </ul>
+</section>
+<section id="conversion">
+  <h2>Type Conversion</h2>
+  <ul>
+    <li>Automatic conversion when possible, else explicit cast: <code>int(), float(), str(), list()</code></li>
+    <li>Convert string to number: <code>int('57')</code>, <code>float('3.2')</code></li>
+    <li>Convert list to set: <code>set([1,2,3,3])</code> → <code>{1,2,3}</code></li>
+  </ul>
+  <pre>
+x = '42'
+print(int(x) + 1)  # 43
+nums = list('abc') # ['a', 'b', 'c']
+  </pre>
+</section>
+<section id="operators">
+  <h2>Operators</h2>
+  <table>
+    <tr><th>Type</th><th>Operators</th></tr>
+    <tr><td>Arithmetic</td><td><code>+ - * / // % **</code></td></tr>
+    <tr><td>Comparison</td><td><code>&gt; &lt; == != &gt;= &lt;=</code></td></tr>
+    <tr><td>Logical</td><td><code>and or not</code></td></tr>
+    <tr><td>Assignment</td><td><code>= += -= *= /= //=</code></td></tr>
+    <tr><td>Identity</td><td><code>is, is not</code></td></tr>
+    <tr><td>Membership</td><td><code>in, not in</code></td></tr>
+  </table>
+  <pre>
+x = 5; y = 3
+print(x ** y)   # 125
+print(x > y and y < 2) # False
+  </pre>
+</section>
+<section id="control">
+  <h2>Control Flow</h2>
+  <ul>
+    <li>if, elif, else conditions</li>
+    <li>while and for loops (iterate lists, dicts, ranges, etc.)</li>
+    <li>'break', 'continue', 'pass' for flow control</li>
+    <li>Python 3.10+: <code>match/case</code> structural pattern matching</li>
+  </ul>
+  <pre>
+for i in range(3):
+    if i == 1: continue
+    print(i)
+
+value = 2
+match value:
+    case 1: print("one")
+    case 2: print("two")
+    case _: print("other")
+  </pre>
+</section>
+<section id="functions">
+  <h2>Functions</h2>
+  <ul>
+    <li>Define with <code>def</code></li>
+    <li>Supports default, keyword, variable-length (*args, **kwargs) arguments</li>
+    <li>Lambda functions: <code>lambda x: x+1</code></li>
+    <li>Docstrings for documentation</li>
+  </ul>
+  <pre>
+def factorial(n):
+    """Recursively calculate n!"""
+    return 1 if n <= 1 else n * factorial(n-1)
+print(factorial(5))  # 120
+  </pre>
+</section>
+<section id="collections">
+  <h2>Collections / Sequences</h2>
+  <ul>
+    <li>list: ordered, mutable</li>
+    <li>tuple: ordered, immutable</li>
+    <li>set: unique unordered items</li>
+    <li>dict: key-value pairs (order guaranteed since Python 3.7)</li>
+  </ul>
+  <pre>
+lst = [1, 2, 2, 3]
+unique = set(lst)
+d = {'a': 1, 'b': 2}
+print(list(d.keys()))
+  </pre>
+</section>
+<section id="strings">
+  <h2>Strings</h2>
+  <ul>
+    <li>Immutability: cannot change in-place</li>
+    <li>f-strings (formatted): <code>f"Hello {name}"</code> (Python 3.6+)</li>
+    <li>Common methods: <code>.split(), .join(), .upper(), .replace()</code></li>
+    <li>Multi-line (triple quotes) and raw strings (r'\t')</li>
+  </ul>
+  <pre>
+s = "Hello, World!"
+print(s.lower())
+print(f"Len: {len(s)}")
+  </pre>
+</section>
+<section id="comprehensions">
+  <h2>List, Dict, Set Comprehensions</h2>
+  <ul>
+    <li>Powerful, compact syntax for generating lists, dicts, sets</li>
+    <li>List: <code>[x*x for x in range(5)]</code></li>
+    <li>Dict: <code>{k: v*2 for k, v in d.items()}</code></li>
+    <li>Set:  <code>{x for x in lst if x > 0}</code></li>
+  </ul>
+  <pre>
+evens = [x for x in range(10) if x%2==0]
+sq_dict = {x: x*x for x in range(4)}
+  </pre>
+</section>
+<section id="oop">
+  <h2>Object-Oriented Programming (OOP)</h2>
+  <ul>
+    <li>Classes: <code>class X:</code> with <code>__init__</code> method for initialization</li>
+    <li>Single & multiple inheritance with explicit parent list</li>
+    <li>Instance vs class attributes; <code>self</code> always first argument</li>
+    <li>Special methods: <code>__str__, __repr__, __len__, __getitem__</code></li>
+    <li>@staticmethod and @classmethod supported</li>
+    <li>Dunder for operator overloading</li>
+  </ul>
+  <pre>
+class Animal:
+    def speak(self):
+        print("Generic sound")
+class Cat(Animal):
+    def speak(self):
+        print("Meow")
+
+c = Cat()
+c.speak()
+  </pre>
+</section>
+<section id="exceptions">
+  <h2>Exception Handling</h2>
+  <ul>
+    <li>try/except/else/finally</li>
+    <li>Raise exceptions: <code>raise ValueError('No!')</code></li>
+    <li>Custom exceptions: subclass Exception</li>
+    <li>All errors inherit from <code>BaseException</code></li>
+  </ul>
+  <pre>
+try:
+    n = int(input())
+except ValueError:
+    print('Invalid input')
+finally:
+    print('Done')
+  </pre>
+</section>
+<section id="fileio">
+  <h2>File I/O</h2>
+  <ul>
+    <li>Open files with <code>with open('file.txt') as f</code></li>
+    <li>Read/write lines with <code>.read(), .write(), .readlines()</code></li>
+    <li>Always close files, or use a context manager (with)</li>
+  </ul>
+  <pre>
+with open('test.txt', 'w') as f:
+    f.write('Hello')
+with open('test.txt') as f:
+    line = f.readline()
+  </pre>
+</section>
+<section id="modules">
+  <h2>Modules & Packages</h2>
+  <ul>
+    <li>Import with <code>import</code>, <code>from ... import...</code></li>
+    <li>Standard library: <code>os, sys, math, random, datetime, re, json, statistics</code></li>
+    <li>Install packages via <b>pip</b>, use <code>venv</code> for environments</li>
+  </ul>
+  <pre>
+import math, random
+print(math.pi, random.randint(1,10))
+  </pre>
+</section>
+<section id="decorators">
+  <h2>Decorators & Higher-Order Functions</h2>
+  <ul>
+    <li>Functions can accept and return other functions.</li>
+    <li>Decorators modify function/class behavior (@decorator syntax)</li>
+  </ul>
+  <pre>
+def bold(func):
+    def wrapper():
+        return '<b>' + func() + '</b>'
+    return wrapper
+
+@bold
+def greet():
+    return "Hello"
+  </pre>
+</section>
+<section id="generators">
+  <h2>Generators & Iterators</h2>
+  <ul>
+    <li>Generator functions use <code>yield</code> for memory-efficient iteration</li>
+    <li>Use <code>next()</code> to get values one at a time</li>
+    <li>All containers are iterable; customize iteration with <code>__iter__</code></li>
+  </ul>
+  <pre>
+def countdown(n):
+    while n > 0:
+        yield n
+        n -= 1
+for i in countdown(3):
+    print(i)
+  </pre>
+</section>
+<section id="libraries">
+  <h2>Popular Libraries & Use Cases</h2>
+  <ul>
+    <li><b>NumPy</b>, <b>Pandas</b> – data analysis/science</li>
+    <li><b>Matplotlib</b>, <b>Seaborn</b> – plotting/visualization</li>
+    <li><b>Requests</b> – HTTP requests</li>
+    <li><b>Flask</b>, <b>Django</b> – web frameworks</li>
+    <li><b>Tkinter</b>, <b>PyQt</b> – GUIs</li>
+    <li><b>OpenCV</b> – image processing, vision</li>
+    <li><b>SQLAlchemy</b> – database ORM</li>
+    <li><b>pytest</b> – testing</li>
+    <li><b>BeautifulSoup</b>, <b>Scrapy</b> – web scraping</li>
+  </ul>
+</section>
+<section id="bestpractices">
+  <h2>Best Practices</h2>
+  <ul>
+    <li>Follow <a href="https://peps.python.org/pep-0008/" target="_blank">PEP 8</a> coding standards (naming, whitespace)</li>
+    <li>Use <code>venv</code> for dependencies</li>
+    <li>Comment, use docstrings, and type hints (Python 3.5+)</li>
+    <li>Prefer clear, readable code over cleverness</li>
+    <li>Write unit tests (e.g. with <code>unittest</code>, <code>pytest</code>)</li>
+    <li>Don’t reinvent the wheel—use the standard library</li>
+    <li>Be explicit: <code>is</code> vs. <code>==</code>, <code>None</code> checks, exceptions</li>
+  </ul>
+</section>
+<section id="resources">
+  <h2>Resources & Further Learning</h2>
+  <ul>
+    <li><a href="https://docs.python.org/3/tutorial/" target="_blank">Official Python Tutorial</a></li>
+    <li><a href="https://www.learnpython.org/" target="_blank">LearnPython.org</a></li>
+    <li><a href="https://realpython.com/" target="_blank">Real Python (Tutorials)</a></li>
+    <li><a href="https://www.w3schools.com/python/" target="_blank">W3Schools Python</a></li>
+    <li><a href="https://www.geeksforgeeks.org/python-programming-language/" target="_blank">GeeksforGeeks Python</a></li>
+    <li><a href="https://leetcode.com/problemset/all/?topicSlugs=python" target="_blank">LeetCode Python Challenges</a></li>
+    <li><a href="https://www.hackerrank.com/domains/tutorials/10-days-of-python" target="_blank">HackerRank 10 Days of Python</a></li>
+    <li><a href="https://automatetheboringstuff.com/" target="_blank">Automate the Boring Stuff with Python (free book)</a></li>
+    <li><a href="https://www.codecademy.com/learn/learn-python-3" target="_blank">Codecademy Python Course</a></li>
+    <li><a href="https://github.com/trekhleb/learn-python" target="_blank">Learn Python by Example (GitHub)</a></li>
+    <li><a href="https://www.fullstackpython.com/" target="_blank">Full Stack Python</a></li>
+    <li><a href="https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU" target="_blank">Corey Schafer Python YouTube Course</a></li>
+    <li><a href="https://www.youtube.com/watch?v=_uQrJ0TkZlc" target="_blank">freeCodeCamp 4h Python Video</a></li>
+    <li><a href="https://pypi.org/" target="_blank">PyPI Package Index</a></li>
+    <li><a href="https://edube.org/study/pe1" target="_blank">Python Essentials Edube Interactive</a></li>
+  </ul>
+  <p>To go further: study advanced OOP (metaclasses), async programming, typing, GUIs, web APIs, and explore open-source projects. Practice solving real problems and contribute to GitHub!</p>
+</section>
+</div>
+<footer>
+    &copy; 2025 CodeRoots | Learn Python with Us
+</footer>
+<!-- Chatbase widget -->
+<script>
+  (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) };window.chatbase=new Proxy(window.chatbase,{get(target, prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="PFEDVxqYF7Mdy24s36Hf1";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load", onLoad)}})();
+</script>
+</body>
+<!-- Chatbase widget -->
+</html>

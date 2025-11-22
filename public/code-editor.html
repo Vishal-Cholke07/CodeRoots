@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Editor Widget</title>
+  <link rel="stylesheet" href="code-editor.css">
+  <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.43.0/min/vs/loader.js"></script>
+</head>
+<body>
+  <div class="editor-widget">
+    <div class="editor-bar">
+      <label for="language-select">Language:</label>
+      <select id="language-select">
+        <option value="python">Python</option>
+        <option value="javascript">JavaScript</option>
+        <option value="cpp">C++</option>
+        <option value="c">C</option>
+        <option value="java">Java</option>
+      </select>
+      <button id="run-button">Run</button>
+    </div>
+    <div id="monaco-editor" class="editor-area"></div>
+    <div class="output-section">
+      <label>Output:</label>
+      <pre id="output"></pre>
+    </div>
+  </div>
+  <script src="code-editor.js"></script>
+  <!-- Chatbase widget -->
+<script>
+  (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) };window.chatbase=new Proxy(window.chatbase,{get(target, prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="PFEDVxqYF7Mdy24s36Hf1";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load", onLoad)}})();
+</script>
+</body>
+</html>

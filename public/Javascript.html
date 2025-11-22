@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon">
+  <title>CodeRoots</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0 !important;
+            background: #fff3e0;
+            color: #432100;
+            min-height: 100vh;
+            position: relative;
+            z-index: 0;
+        }
+        header {
+            background: #ff9800;
+            color: white;
+            text-align: center;
+            padding: 38px 0 24px 0;
+            font-size: 32px;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+            box-shadow: 0 2px 16px #ff980022;
+            position: relative;
+            z-index: 5;
+        }
+        nav {
+            background: #f57c00;
+            padding: 25px 0 18px 0;
+            text-align: center;
+            position: relative;
+            z-index: 5;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 13px 24px;
+            font-size: 19px;
+            margin: 6px 10px;
+            border-radius: 21px;
+            transition: background 0.2s, color 0.2s;
+            display: inline-block;
+            font-weight: 600;
+        }
+        nav a:hover, nav a.active {
+            background: #442900;
+            color: #ffd54f;
+        }
+        .container {
+            width: 100%;
+            max-width: 1140px;
+            margin: 54px auto 0 auto;
+            padding: 48px 2vw 47px 2vw;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 48px 0 #ff980020;
+            position: relative;
+            min-height: 90vh;
+            z-index: 10;
+        }
+        h2 {
+            color: #ff9800;
+            margin-top: 54px;
+            font-size: 2.2em;
+            letter-spacing: 1px;
+            font-weight: 700;
+            border-bottom: 3px solid #ffcc80;
+            padding-bottom: 11px;
+            margin-bottom: 18px;
+            background: #ffe0b2;
+            border-radius: 7px 7px 0 0;
+            box-shadow: 0 3px 10px #ffcc802c;
+        }
+        section {
+            margin: 0 0 68px 0;
+            padding: 42px 7vw 34px 7vw !important;
+            border-bottom: 2.5px solid #ffcc80a1;
+            background: #fff8e1;
+            border-radius: 16px;
+            box-shadow: 0 2px 16px #ffe0b222;
+            position: relative;
+            z-index: 12;
+            min-height: 170px;
+        }
+        section:last-child {
+            border-bottom: none;
+        }
+        pre, code {
+            font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace !important;
+            background: #ffe0b2 !important;
+            padding: 1em 1.5em;
+            border-radius: 8px;
+            font-size: 1.07em;
+            overflow-x: auto;
+            color: #e65100 !important;
+            margin-bottom: 23px;
+            margin-top: 14px;
+            white-space: pre-wrap;
+            word-break: break-word;
+            border: 1.5px solid #fbbe7b;
+            box-shadow: 0 4px 12px #ffc10728;
+            display: block;
+            z-index: 88;
+        }
+        ul, ol {
+            margin: 18px 0 18px 42px;
+            font-size: 1.08em;
+            line-height: 1.8;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background: #ffecb3 !important;
+            margin: 19px 0 30px 0;
+            border-radius: 9px;
+            overflow: hidden;
+        }
+        th, td {
+            border: 1px solid #ffb84d;
+            text-align: left;
+            padding: 14px 15px;
+            font-size: 1.03em;
+            background: #fff3e0;
+        }
+        th {
+            background: #ffe0b2 !important;
+            color: #e65100;
+        }
+        footer {
+            text-align: center;
+            padding: 28px;
+            background: #ff9800;
+            color: white;
+            font-size: 1.17em;
+            letter-spacing: 1.3px;
+            margin-top: 36px;
+            border-radius: 20px 20px 0 0;
+            z-index: 20;
+            position: relative;
+        }
+        @media (max-width: 900px) {
+            .container { width: 99%; padding: 7px; }
+            nav a { padding: 10px 6px; font-size: 16px; margin: 3px; }
+            section { padding: 18px 2vw 13px 2vw !important; }
+            h2 { font-size: 1.5em; }
+        }
+        @media (max-width: 540px) {
+            .container { width: 100vw; padding: 0; }
+            section { padding: 2vw 0 2vw 0 !important; }
+        }
+    </style>
+</head>
+<body>
+  <!-- Compact Minimal White Navbar Start -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background:#fff;box-shadow:0 1px 6px #0001;min-height:44px;padding-top:0;padding-bottom:0;">
+  <div class="container-fluid p-0">
+    <a class="navbar-brand" href="index.html" style="font-weight:600;font-size:1.14em;padding:0 14px 0 6px;letter-spacing:0.01em;color:#1d184c;">
+      <i class="fa fa-code" style="color:#2979ff;margin-right:5px;"></i>CodeRoots
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar"
+      aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation"
+      style="outline:none;border:none;padding:6px 12px;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+      <ul class="navbar-nav align-items-center mb-0">
+        <li class="nav-item mx-1">
+          <a class="nav-link p-2" href="index.html" style="color:#000000;">Home</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link p-2" href="about.html" style="color:#000000;">About</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link p-2" href="courses.html" style="color:#000000;">Courses</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link p-2" href="contact.html" style="color:#000000;">Contact Us</a>
+        </li>
+        <li class="nav-item ml-2 d-none d-md-block">
+          <a href="https://www.facebook.com/" target="_blank" title="Facebook" class="px-1"><i class="fa fa-facebook" style="color:#4267B2;"></i></a>
+          <a href="https://www.twitter.com/" target="_blank" title="Twitter" class="px-1"><i class="fa fa-twitter" style="color:#1DA1F2;"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn" class="px-1"><i class="fa fa-linkedin" style="color:#2867B2;"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" title="Instagram" class="px-1"><i class="fa fa-instagram" style="color:#E4405F;"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Compact Minimal White Navbar End -->
+<script src="code-editor-launcher.js"></script>
+<!-- Bootstrap JS for navbar toggle -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<header>Learn JavaScript - Full Course</header>
+<nav>
+    <a href="#introduction">Introduction</a>
+    <a href="#setup">Setup</a>
+    <a href="#syntax">Syntax & Variables</a>
+    <a href="#datatypes">Data Types</a>
+    <a href="#conversion">Type Conversion</a>
+    <a href="#operators">Operators</a>
+    <a href="#control">Control Flow</a>
+    <a href="#functions">Functions</a>
+    <a href="#arrays">Arrays</a>
+    <a href="#objects">Objects</a>
+    <a href="#oop">OOP</a>
+    <a href="#async">Async JavaScript</a>
+    <a href="#dom">DOM & Browser</a>
+    <a href="#errors">Error Handling</a>
+    <a href="#modern">Modern JS (ES6+)</a>
+    <a href="#libraries">Tools & Libraries</a>
+    <a href="#bestpractices">Best Practices</a>
+    <a href="#resources">Further Reading</a>
+</nav>
+<div class="container">
+<section id="introduction">
+  <h2>Introduction to JavaScript</h2>
+  <p><b>JavaScript (JS)</b> is the programming language of the modern web, used for dynamic websites, apps, games, servers, mobile, embedded hardware, and more.</p>
+  <ul>
+    <li>First created in 1995, now standardized as <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources#ecmascript" target="_blank">ECMAScript</a>.</li>
+    <li>Mainly used in browsers, but also on servers (Node.js), and devices (IoT, React Native, Deno).</li>
+    <li>Dominates front-end development (with HTML, CSS).</li>
+    <li>Continuously growing, always evolving (ES6+ modern features).</li>
+  </ul>
+</section>
+<section id="setup">
+  <h2>Setup & Where JavaScript Runs</h2>
+  <ul>
+    <li>JavaScript runs natively in all browsers (Chrome, Firefox, Edge, Safari).</li>
+    <li><b>Node.js</b> allows JS outside browsers (for backend, CLI tools, servers).</li>
+    <li>No install needed for simple web use—just open your browser’s console (F12 or Ctrl+Shift+J).
+    <pre>// In browser developer tools:
+console.log('Hello from console');
+</pre></li>
+    <li>Create HTML files with <code>&lt;script&gt;</code> tags, external JS files, or try playgrounds like <a href="https://jsfiddle.net/" target="_blank">JSFiddle</a>, <a href="https://codepen.io/" target="_blank">CodePen</a>, <a href="https://repl.it/~" target="_blank">Repl.it</a>.</li>
+    <li>Node.js: <code>node myapp.js</code> runs JS on desktop/server.</li>
+  </ul>
+</section>
+<section id="syntax">
+  <h2>Syntax & Variables</h2>
+  <p>JavaScript syntax is flexible and forgiving. Code is written in statements, separated by semicolons (optional, but best practice), and organized in functions or files/scripts.</p>
+  <ul>
+    <li>Variables can be declared with <b>let</b>, <b>const</b> (block scope, ES6+), or <b>var</b> (old, function/global scope).</li>
+    <li>Use <b>let</b> for values that change, <b>const</b> for constants, avoid <b>var</b> in new code.</li>
+    <li>Variable & function names: case-sensitive, camelCase, cannot start with number.</li>
+    <li>JS is dynamically typed: variables can hold any type at any time.</li>
+    <li><b>Hoisting:</b> <b>var</b> declarations are moved up before code runs; <b>let/const</b> are not.</li>
+  </ul>
+  <pre>
+let age = 25;
+const pi = 3.14;
+var message = "Hello!";
+
+console.log(typeof age); // number
+  </pre>
+</section>
+<section id="datatypes">
+  <h2>Data Types in JavaScript</h2>
+  <p>JavaScript supports several fundamental types.</p>
+  <table>
+    <tr><th>Type</th><th>Example</th></tr>
+    <tr><td>Number</td><td><code>let n = 42; let f = 3.14;</code></td></tr>
+    <tr><td>String</td><td><code>let name = "Alice";</code></td></tr>
+    <tr><td>Boolean</td><td><code>let done = false;</code></td></tr>
+    <tr><td>Array</td><td><code>let arr = [1,2,3];</code></td></tr>
+    <tr><td>Object</td><td><code>let user = {name: 'Sam', age:18};</code></td></tr>
+    <tr><td>Null</td><td><code>let n = null;</code></td></tr>
+    <tr><td>Undefined</td><td><code>let x;</code></td></tr>
+    <tr><td>Symbol</td><td><code>let id = Symbol('id');</code></td></tr>
+    <tr><td>BigInt</td><td><code>let big = 123456789012345678901n;</code></td></tr>
+  </table>
+  <ul>
+    <li>Check types with <code>typeof value</code>.</li>
+    <li>Arrays and functions are technically objects.</li>
+    <li>Strings, numbers, and booleans also have <b>object wrappers</b> for methods.</li>
+  </ul>
+</section>
+<section id="conversion">
+  <h2>Type Conversion & Coercion</h2>
+  <p>Automatically or manually change between types.</p>
+  <ul>
+    <li>Automatic conversion: <code>let x = '5' * 2; // 10</code></li>
+    <li><b>Explicit:</b> <code>Number('42')</code>, <code>String(123)</code>, <code>Boolean(0)</code></li>
+    <li><b>Falsy</b> values: <code>0, '', null, undefined, NaN, false</code></li>
+    <li><b>parseInt</b>, <b>parseFloat</b> convert from string</li>
+    <li>Always check edge cases. E.g., <code>Number('abc')</code> is <code>NaN</code></li>
+  </ul>
+  <pre>
+Number('5') // 5
+Boolean('') // false
+String(99) // '99'
+parseInt('42px') // 42
+  </pre>
+</section>
+<section id="operators">
+  <h2>Operators</h2>
+  <table>
+    <tr><th>Type</th><th>Example</th></tr>
+    <tr><td>Arithmetic</td><td><code>+ - * / % ++ --</code></td></tr>
+    <tr><td>Assignment</td><td><code>= += -= *= /=</code></td></tr>
+    <tr><td>Comparison</td><td><code>== != === !== &lt; &gt; &lt;= &gt;=</code></td></tr>
+    <tr><td>Logical</td><td><code>&& || !</code></td></tr>
+    <tr><td>Bitwise</td><td><code>& | ^ ~ &lt;&lt; &gt;&gt; &gt;&gt;&gt;</code></td></tr>
+    <tr><td>Type</td><td><code>typeof, instanceof</code></td></tr>
+  </table>
+  <pre>
+let a = 5; a += 2; // a=7
+console.log(10 == '10');   // true (coerced)
+console.log(10 === '10');  // false (no coercion)
+console.log(true && false); // false
+  </pre>
+</section>
+<section id="control">
+  <h2>Control Flow</h2>
+  <p>Use conditional code, multiple kinds of loops, and truthy/falsy logic.</p>
+  <ul>
+    <li><b>if/else</b>, <b>switch</b> for decisions</li>
+    <li><b>for</b>, <b>while</b>, <b>do...while</b>, <b>for...of</b>, <b>for...in</b> for iteration</li>
+    <li>Break, continue, labeled blocks allowed</li>
+    <li>Ternary <code>condition ? a : b</code></li>
+    <li>Optional chaining: <code>user?.profile?.name</code> (ES2020+)</li>
+  </ul>
+  <pre>
+for (let i = 1; i <= 3; i++) { console.log(i); }
+let name = undefined;
+console.log(name ?? 'Guest');  // Guest
+  </pre>
+</section>
+<section id="functions">
+  <h2>Functions in JavaScript</h2>
+  <p>First-class, flexible, and central to JS programming. Functions can be declared, as expressions, arrows, have default/rest/spread, and form closures for advanced programming.</p>
+  <ul>
+    <li>Function declaration vs. function expression vs. arrow functions</li>
+    <li>Arguments object, default parameters, rest (<code>...</code>), spread usage</li>
+    <li>Closures: inner functions that remember outer scope</li>
+    <li>Recursion supported</li>
+    <li>IIFE (Immediately Invoked Function Expression)</li>
+  </ul>
+  <pre>
+function add(a, b=0) { return a + b; }
+const square = x => x * x;
+(function(){console.log('IIFE');})();
+function outer() { let x=42; return function(){return x;} }
+  </pre>
+</section>
+<section id="arrays">
+  <h2>Arrays</h2>
+  <p>Arrays are a core structure, highly dynamic, holding any type. Many powerful methods and patterns.</p>
+  <ul>
+    <li>Common methods: <code>push, pop, shift, unshift, slice, splice, map, filter, reduce, forEach, sort</code></li>
+    <li>Arrays can contain any type, mix types, and be nested</li>
+    <li>ES6: spread/rest, <code>for...of</code>, destructuring</li>
+  </ul>
+  <pre>
+let arr = [1, 2, 3];
+arr.push(4);
+let [first, ...rest] = arr;
+console.log(arr.map(x => x * 2));
+  </pre>
+</section>
+<section id="objects">
+  <h2>Objects</h2>
+  <p>Objects in JS are dictionaries of key-value pairs and the foundation of most advanced structures. Properties/methods can be accessed and modified at runtime.</p>
+  <ul>
+    <li>Create with curly braces or via constructors</li>
+    <li>Nested, dynamic property access (<code>obj[key]</code> or <code>obj.key</code>)</li>
+    <li>Object methods, <code>this</code> keyword</li>
+    <li>Spread and destructuring (ES6+)</li>
+    <li>Prototype chain: inheritance via <code>__proto__</code> or <code>Object.create()</code></li>
+  </ul>
+  <pre>
+const user = { name: "Priya", age: 20 };
+console.log(user["name"]);
+const {age} = user;  // destructuring
+  </pre>
+</section>
+<section id="oop">
+  <h2>OOP: Classes & Prototypes</h2>
+  <p>JavaScript supports OOP via prototypes and since ES6+ with <code>class</code> syntax. Real OOP patterns: inheritance, encapsulation, polymorphism.</p>
+  <ul>
+    <li>Pre-ES6: Constructor functions, <code>prototype</code> property</li>
+    <li>ES6+: <code>class</code>, <code>constructor</code>, <code>extends</code>, <code>super</code>, static fields, private fields (#foo)</li>
+    <li>Polymorphism possible via method overriding</li>
+  </ul>
+  <pre>
+class Car {
+  #internalID = 123;
+  constructor(brand, year) {
+    this.brand = brand;
+    this.year = year;
+  }
+  drive() { console.log("Driving..."); }
+}
+class ElectricCar extends Car {
+  drive() { console.log("E-driving..."); }
+}
+const myCar = new ElectricCar('Tesla', 2021);
+myCar.drive();
+  </pre>
+</section>
+<section id="async">
+  <h2>Async JavaScript</h2>
+  <p>Many JS operations (AJAX, APIs, timers, UI) are asynchronous. JS handles async via callbacks, promises, async/await—critical for modern web programming.</p>
+  <ul>
+    <li>Callbacks: pass a function for later execution</li>
+    <li>Promises: object representing future completion/failure (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">MDN Promise</a>)</li>
+    <li>Async/await: elegant modern syntax (ES2017+)</li>
+    <li>AJAX: Asynchronous HTTP with <code>fetch()</code> or <code>XMLHttpRequest</code></li>
+    <li>setTimeout/setInterval (timers)</li>
+  </ul>
+  <pre>
+setTimeout(() => console.log('After 1s!'), 1000);
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then(res => res.json())
+  .then(data => console.log(data));
+async function foo() {
+  let res = await fetch('https://api.example.com/data');
+  return res.text();
+}
+  </pre>
+</section>
+<section id="dom">
+  <h2>DOM & Browser APIs</h2>
+  <p>JS manipulates HTML and CSS via the DOM (Document Object Model). Numerous powerful APIs are available for web interactivity.</p>
+  <ul>
+    <li>Querying: <code>document.getElementById</code>, <code>querySelector</code></li>
+    <li>Changing content/styles dynamically</li>
+    <li>Events: <code>onclick</code>, <code>addEventListener</code>, keyboard/mouse events</li>
+    <li>APIs: <code>localStorage</code>, <code>fetch</code>, <code>navigator</code>, <code>history</code>, <code>Canvas</code>, geolocation</li>
+  </ul>
+  <pre>
+document.querySelector('#btn').addEventListener('click', () => {
+  alert('You clicked!');
+});
+localStorage.setItem('theme', 'dark');
+  </pre>
+</section>
+<section id="errors">
+  <h2>Error Handling</h2>
+  <p>JS uses <code>try/catch/finally</code> to handle errors—critical for robustness, especially in async or UI code.</p>
+  <ul>
+    <li>Native errors: <code>Error</code>, <code>TypeError</code>, <code>ReferenceError</code>, etc.</li>
+    <li>Custom errors: extend <code>Error</code></li>
+    <li>Throw, catch, recover as needed</li>
+  </ul>
+  <pre>
+try {
+  throw new Error('Oops!');
+} catch(e) {
+  console.log(e.message);
+} finally {
+  console.log('Always runs');
+}
+  </pre>
+</section>
+<section id="modern">
+  <h2>Modern JS (ES6+)</h2>
+  <p>Recent specs bring new syntax and power, including arrow functions, template literals, destructuring, modules, let/const, defaults, async/await, and more.</p>
+  <ul>
+    <li>Use <code>let</code> and <code>const</code> (not <code>var</code>)</li>
+    <li>Import/export modules (<code>import x from './x.js'</code>)</li>
+    <li>Template strings: <code>const msg = `Hi, ${user}!`;</code></li>
+    <li>Destructuring: <code>const {id, name} = obj;</code></li>
+    <li>...spread operator, REST (...args), default parameters</li>
+  </ul>
+  <pre>
+const user = {name: "Aman", id: 10};
+const {id, ...rest} = user;
+import add from './math.js';
+  </pre>
+</section>
+<section id="libraries">
+  <h2>Popular Libraries & Tools</h2>
+  <ul>
+    <li>npm, yarn: package managers for libraries <a href="https://www.npmjs.com/" target="_blank">(npm)</a></li>
+    <li>React, Vue, Svelte: front-end frameworks</li>
+    <li>Node.js: server-side JS, CLI tooling</li>
+    <li>jQuery: classic DOM utility (often unnecessary now)</li>
+    <li>TypeScript: superset of JS adding static typing <a href="https://www.typescriptlang.org/" target="_blank">(TS)</a></li>
+    <li>Lodash/Underscore: common utilities</li>
+    <li>Webpack/Parcel: module bundlers</li>
+    <li>ESLint/Prettier: code quality, formatting</li>
+  </ul>
+</section>
+<section id="bestpractices">
+  <h2>Best Practices</h2>
+  <ul>
+    <li>Prefer <code>let</code>/<code>const</code> over <code>var</code></li>
+    <li>Name variables in camelCase, constants in SCREAMING_SNAKE_CASE</li>
+    <li>Keep code DRY (Don’t Repeat Yourself)</li>
+    <li>Avoid globals, keep functions short</li>
+    <li>Write modular code (use modules)</li>
+    <li>Comment your code, use JSdoc for documentation</li>
+    <li>Sanitize/validate user input (security)</li>
+    <li>Handle errors, always test code in multiple browsers</li>
+  </ul>
+</section>
+<section id="resources">
+  <h2>Further Reading & Resources</h2>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN Web Docs: JavaScript</a></li>
+    <li><a href="https://javascript.info/" target="_blank">javascript.info – Extensive Modern Guide</a></li>
+    <li><a href="https://eloquentjavascript.net/" target="_blank">Eloquent JavaScript – Free Book</a></li>
+    <li><a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank">Codecademy: JS Course</a></li>
+    <li><a href="https://www.freecodecamp.org/news/tag/javascript/" target="_blank">freeCodeCamp JS Tutorials</a></li>
+    <li><a href="https://www.hackerrank.com/domains/tutorials/10-days-of-javascript" target="_blank">HackerRank: 10 Days of JS</a></li>
+    <li><a href="https://www.codewars.com/collections/javascript-basics" target="_blank">Codewars: JS Challenges</a></li>
+    <li><a href="https://www.youtube.com/c/TheNetNinja" target="_blank">Net Ninja JS YouTube</a></li>
+    <li><a href="https://www.fullstackopen.com/" target="_blank">Full Stack Open (JS for Web Apps)</a></li>
+    <li><a href="https://github.com/getify/You-Dont-Know-JS" target="_blank">You Don’t Know JS (Book Series)</a></li>
+  </ul>
+  <p>Progress with: frameworks (React, Vue), TypeScript, testing (Jest), and understanding JS build tools (Webpack, Babel). Explore browser security, accessibility, and always write modern, maintainable code!</p>
+</section>
+</div>
+<footer>
+    &copy; 2025 CodeRoots | Learn JavaScript with Us
+</footer>
+<!-- Chatbase widget -->
+<script>
+  (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) };window.chatbase=new Proxy(window.chatbase,{get(target, prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="PFEDVxqYF7Mdy24s36Hf1";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load", onLoad)}})();
+</script>
+</body>
+</html>

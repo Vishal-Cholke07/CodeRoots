@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon">
+  <title>CodeRoots</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0 !important;
+            background: #f8f9fa;
+            color: #222;
+            min-height: 100vh;
+            position: relative;
+            z-index: 0;
+        }
+        header {
+            background: #005792;
+            color: white;
+            text-align: center;
+            padding: 40px 0 26px 0;
+            font-size: 32px;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+            box-shadow: 0 2px 16px rgba(47, 128, 237, 0.14);
+            position: relative;
+            z-index: 5;
+        }
+        nav {
+            background: #13334c;
+            padding: 28px 0 22px 0;
+            text-align: center;
+            position: relative;
+            z-index: 5;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 26px;
+            font-size: 19px;
+            margin: 7px 12px;
+            border-radius: 21px;
+            transition: background 0.2s, color 0.2s;
+            display: inline-block;
+            font-weight: 600;
+        }
+        nav a:hover, nav a.active {
+            background: #012742;
+            color: #ffc107;
+        }
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            margin: 54px auto 0 auto;
+            padding: 48px 2vw 47px 2vw;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 48px 0 rgba(0,0,0,0.13);
+            position: relative;
+            min-height: 90vh;
+            z-index: 10;
+        }
+        h2 {
+            color: #005792;
+            margin-top: 54px;
+            font-size: 2.3em;
+            letter-spacing: 1px;
+            font-weight: 700;
+            border-bottom: 3px solid #d4ecfa;
+            padding-bottom: 9px;
+            margin-bottom: 18px;
+            background: #e9f7f9;
+            border-radius: 7px 7px 0 0;
+            box-shadow: 0 3px 10px #ace0fb20;
+        }
+        section {
+            margin: 0 0 65px 0;
+            padding: 42px 7vw 32px 7vw !important;
+            border-bottom: 2.5px solid #e3effc;
+            background: #fafdff;
+            border-radius: 16px;
+            box-shadow: 0 2px 16px #e3f1fa33;
+            position: relative;
+            z-index: 12;
+            min-height: 180px;
+        }
+        section:last-child {
+            border-bottom: none;
+        }
+        pre, code {
+            font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace !important;
+            background: #13354b14 !important;
+            padding: 1em 1.5em;
+            border-radius: 8px;
+            font-size: 1.07em;
+            overflow-x: auto;
+            color: #005792 !important;
+            margin-bottom: 23px;
+            margin-top: 14px;
+            white-space: pre-wrap;
+            word-break: break-word;
+            border: 1.5px solid #acd1ee;
+            box-shadow: 0 4px 12px #acd1ee30;
+            display: block;
+            z-index: 88;
+        }
+        ul, ol {
+            margin: 18px 0 18px 42px;
+            font-size: 1.08em;
+            line-height: 1.8;
+        }
+        footer {
+            text-align: center;
+            padding: 28px;
+            background: #005792;
+            color: white;
+            font-size: 1.17em;
+            letter-spacing: 1.3px;
+            margin-top: 36px;
+            border-radius: 20px 20px 0 0;
+            z-index: 20;
+            position: relative;
+        }
+        @media (max-width: 900px) {
+            .container { width: 99%; padding: 7px; }
+            nav a { padding: 10px 6px; font-size: 16px; margin: 3px; }
+            section { padding: 18px 2vw 13px 2vw !important; }
+            h2 { font-size: 1.5em; }
+        }
+        @media (max-width: 540px) {
+            .container { width: 100vw; padding: 0; }
+            section { padding: 2vw 0 2vw 0 !important; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Compact Minimal White Navbar Start -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background:#fff;box-shadow:0 1px 6px #0001;min-height:44px;padding-top:0;padding-bottom:0;">
+  <div class="container-fluid p-0">
+    <a class="navbar-brand" href="index.html" style="font-weight:600;font-size:1.14em;padding:0 14px 0 6px;letter-spacing:0.01em;color:#1d184c;">
+      <i class="fa fa-code" style="color:#2979ff;margin-right:5px;"></i>CodeRoots
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar"
+      aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation"
+      style="outline:none;border:none;padding:6px 12px;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+      <ul class="navbar-nav align-items-center mb-0">
+        <li class="nav-item mx-1">
+          <a class="nav-link p-2" href="index.html" style="color:#000000;">Home</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link p-2" href="about.html" style="color:#000000;">About</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link p-2" href="courses.html" style="color:#000000;">Courses</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link p-2" href="contact.html" style="color:#000000;">Contact Us</a>
+        </li>
+        <li class="nav-item ml-2 d-none d-md-block">
+          <a href="https://www.facebook.com/" target="_blank" title="Facebook" class="px-1"><i class="fa fa-facebook" style="color:#4267B2;"></i></a>
+          <a href="https://www.twitter.com/" target="_blank" title="Twitter" class="px-1"><i class="fa fa-twitter" style="color:#1DA1F2;"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn" class="px-1"><i class="fa fa-linkedin" style="color:#2867B2;"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" title="Instagram" class="px-1"><i class="fa fa-instagram" style="color:#E4405F;"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Compact Minimal White Navbar End -->
+<script src="code-editor-launcher.js"></script>
+<!-- Bootstrap JS for navbar toggle -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <header>Learn C++ - Full Course</header>
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#syntax">C++ Syntax</a>
+        <a href="#datatypes">Data Types</a>
+        <a href="#control">Control Flow</a>
+        <a href="#arrays">Arrays & Strings</a>
+        <a href="#functions">Functions</a>
+        <a href="#oop">OOP</a>
+        <a href="#stl">STL</a>
+        <a href="#inheritance">Inheritance</a>
+        <a href="#polymorphism">Polymorphism</a>
+        <a href="#resources">Further Reading</a>
+    </nav>
+    <div class="container">
+        <section id="introduction">
+            <h2>Introduction to C++</h2>
+            <p><b>C++</b> is one of the most important modern programming languages, enabling both low-level memory control and high-level abstractions. It is widely used for system programming, high-frequency trading, games, embedded systems, large-scale applications, and performance-critical tasks.</p>
+            <ul>
+                <li>Combines power (C) with abstraction and OOP features.</li>
+                <li>Compiled, fast, and portable.</li>
+                <li>Standard Template Library for fast, generic containers and algorithms.</li>
+                <li>Supports direct low-level memory control and high-level abstractions.</li>
+                <li>Used by leading companies (Microsoft, Adobe, game studios, Google, Facebook...)</li>
+            </ul>
+        </section>
+        <section id="syntax">
+            <h2>C++ Basic Syntax</h2>
+            <p>The C++ syntax closely resembles C, but adds many new keywords and features. Standard libraries are included with the <code>#include</code> directive. The <code>main()</code> function is the program's entry point. C++ uses <code>cout</code> and <code>cin</code> for output and input (from <a href="https://en.cppreference.com/w/cpp/io" target="_blank">iostream</a>).</p>
+            <ul>
+                <li>Uses <code>#include</code> to import libraries. <code>iostream</code> allows input and output.</li>
+                <li><code>using namespace std;</code> simplifies code by not needing <code>std::</code> everywhere.</li>
+                <li>Every program starts with <code>main()</code>.</li>
+                <li>Statements end with a semicolon <code>;</code>. Curly braces define code blocks.</li>
+            </ul>
+            <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout &lt;&lt; "Hello, World!";
+    return 0;
+}
+            </pre>
+        </section>
+        <section id="datatypes">
+            <h2>Data Types in C++</h2>
+            <p>C++ supports all primitive types from C, and adds many rich types for objects and containers. Understanding types is crucial for writing efficient and correct code.</p>
+            <ul>
+                <li><b>int</b>: Whole numbers (e.g., 5, -2, 789)</li>
+                <li><b>float/double</b>: Decimal numbers, single/double precision</li>
+                <li><b>char</b>: Single ASCII character (e.g., 'A')</li>
+                <li><b>string</b>: Text (<code>#include &lt;string&gt;</code>)</li>
+                <li><b>bool</b>: Boolean logic (true or false)</li>
+                <li><b>unsigned</b>: No negatives (e.g., <code>unsigned int</code>)</li>
+            </ul>
+            <pre>
+int age = 21;
+double price = 19.99;
+char grade = 'B';
+bool isOpen = true;
+string name = "Sam";
+            </pre>
+        </section>
+        <section id="control">
+            <h2>Control Flow in C++</h2>
+            <p>Use conditional statements and loops to direct your program's logic. C++ supports nested and combined controls—vital for building flexible programs.</p>
+            <ul>
+                <li>if, else if, and else drive decision-making.</li>
+                <li><code>for</code>, <code>while</code>, and <code>do...while</code> provide loops for repeated actions.</li>
+                <li><code>switch</code> selects between multiple constant options.</li>
+            </ul>
+            <pre>
+int x = 10;
+if (x &gt; 5) {
+    cout &lt;&lt; "x is greater than 5";
+} else {
+    cout &lt;&lt; "x is 5 or less";
+}
+            </pre>
+            <pre>
+for (int i = 0; i &lt; 3; i++) {
+    cout &lt;&lt; i &lt;&lt; " ";
+}
+            </pre>
+        </section>
+        <section id="arrays">
+            <h2>Arrays &amp; Strings in C++</h2>
+            <p>Arrays store a fixed number of items of the same type; <code>std::string</code> supports powerful, dynamic strings. For flexible lists with changing size, use <a href="https://en.cppreference.com/w/cpp/container/vector" target="_blank">std::vector</a> from the STL.</p>
+            <ul>
+                <li>Arrays hold fixed-size sequential collections of the same type.</li>
+                <li>Strings use <code>std::string</code>, allowing dynamic length and many functions.</li>
+                <li>Iterate using loops.</li>
+            </ul>
+            <pre>
+int a[4] = {1,2,3,4};
+cout &lt;&lt; a[2]; // prints 3
+
+#include &lt;string&gt;
+string s = "Welcome!";
+printf("%zu", s.length());
+            </pre>
+        </section>
+        <section id="functions">
+            <h2>Functions in C++</h2>
+            <p>Functions enable code re-use and logical separation. C++ allows <b>default arguments, function overloading, and inline functions</b>. Functions improve maintainability and can pass objects by value, reference, or pointer.</p>
+            <ul>
+                <li>Reusable blocks of code; can return a value and/or take parameters.</li>
+                <li>Arguments are passed by value (copy) or reference (with <code>&</code>).</li>
+                <li>Use <code>void</code> for functions without return values.</li>
+            </ul>
+            <pre>
+int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    cout &lt;&lt; add(5, 3);
+    return 0;
+}
+            </pre>
+        </section>
+        <section id="oop">
+            <h2>Introduction to OOP (Object-Oriented Programming)</h2>
+            <p>OOP in C++ is based on <b>classes</b>, which combine data and methods. Principles like <b>encapsulation, inheritance, polymorphism, and abstraction</b> make large programs easier to write and maintain. Put each class definition in its own header/source files for large projects.</p>
+            <ul>
+                <li>C++ is famous for supporting OOP: organizing code around objects/classes.</li>
+                <li>Classes bundle data (members) and behavior (methods).</li>
+                <li>OOP enables encapsulation, inheritance, and polymorphism.</li>
+            </ul>
+            <pre>
+class Car {
+public:
+    string brand;
+    int year;
+    void honk() {
+        cout &lt;&lt; "Beep!\n";
+    }
+};
+
+int main() {
+    Car myCar;
+    myCar.brand = "Toyota";
+    myCar.year = 2022;
+    myCar.honk();
+    cout &lt;&lt; myCar.brand;
+    return 0;
+}
+            </pre>
+        </section>
+        <section id="stl">
+            <h2>C++ STL (Standard Template Library)</h2>
+            <p>The STL (see <a href="https://en.cppreference.com/w/cpp/standard_library" target="_blank">cppreference STL overview</a>) includes <b>generic containers</b>, <b>algorithm functions</b>, and <b>iterators</b>. STL dramatically increases productivity and performance for common tasks like sorting, searching, and data management.</p>
+            <ul>
+                <li>Provides efficient, ready-made classes for collections and algorithms.</li>
+                <li>Common STL containers: <code>vector</code>, <code>map</code>, <code>set</code>, <code>queue</code>, <code>stack</code>.</li>
+                <li>Containers are generic (work on any type using templates).</li>
+            </ul>
+            <pre>
+#include &lt;vector&gt;
+#include &lt;algorithm&gt;
+vector&lt;int&gt; nums = {4,1,3};
+sort(nums.begin(), nums.end());
+for (int n : nums) cout &lt;&lt; n &lt;&lt; ' ';
+            </pre>
+        </section>
+        <section id="inheritance">
+            <h2>Inheritance in C++</h2>
+            <p>Inheritance lets you define new classes using existing classes as a base. Supports <b>single</b>, <b>multiple</b>, and <b>virtual inheritance</b> (to prevent diamond problem). It's a core pillar of OOP design and enables code reuse and hierarchy modeling.</p>
+            <ul>
+                <li>Allows new classes to acquire properties/methods of existing ones.</li>
+                <li>Supports reusability and extension.</li>
+                <li>Base class: parent | Derived class: child.</li>
+            </ul>
+            <pre>
+class Animal {
+public:
+    void speak() { cout &lt;&lt; "Generic sound\n"; }
+};
+
+class Dog : public Animal {
+};
+
+int main() {
+    Dog d;
+    d.speak(); // Outputs: Generic sound
+    return 0;
+}
+            </pre>
+        </section>
+        <section id="polymorphism">
+            <h2>Polymorphism in C++</h2>
+            <p>With polymorphism, functions or methods can behave differently based on the context or the object's type. <b>Virtual functions</b> enable dynamic method dispatch. <a href="https://en.cppreference.com/w/cpp/language/virtual" target="_blank">Learn about virtual and override</a>.</p>
+            <ul>
+                <li>Achieved using function overriding and virtual functions.</li>
+                <li>Allows child classes to define specific implementations.</li>
+            </ul>
+            <pre>
+class Animal {
+public:
+    virtual void speak() { cout &lt;&lt; "Animal sound\n"; }
+};
+class Cat : public Animal {
+public:
+    void speak() override { cout &lt;&lt; "Meow\n"; }
+};
+int main() {
+    Animal* a = new Cat();
+    a->speak(); // Outputs: Meow
+    delete a;
+    return 0;
+}
+            </pre>
+        </section>
+        <section id="resources">
+            <h2>Further Reading &amp; Resources</h2>
+            <ul>
+                <li><a href="https://en.cppreference.com/w/cpp" target="_blank">CPP Reference – C++ Standard Library &amp; Syntax</a></li>
+                <li><a href="https://www.learncpp.com/" target="_blank">LearnCpp.com – Practical C++ Tutorials</a></li>
+                <li><a href="https://cplusplus.com/doc/tutorial/" target="_blank">cplusplus.com – Classic C++ Tutorials</a></li>
+                <li><a href="https://www.geeksforgeeks.org/c-plus-plus/" target="_blank">GeeksforGeeks – C++ Programming</a></li>
+                <li><a href="https://www.codewars.com/collections/cpp-for-beginners" target="_blank">Codewars: C++ Challenges &amp; Practice Problems</a></li>
+                <li><a href="https://www.hackerrank.com/domains/tutorials/10-days-of-cpp" target="_blank">HackerRank: 10 Days of C++ (Problem Series)</a></li>
+            </ul>
+            <p>For advanced concepts: Explore topics such as templates, smart pointers (<a href="https://en.cppreference.com/w/cpp/memory/unique_ptr" target="_blank">unique_ptr</a>), exception handling, and C++17/C++20 features via <a href="https://en.cppreference.com/w/cpp" target="_blank">cppreference</a>.</p>
+        </section>
+    </div>
+    <footer>
+        &copy; 2025 CodeRoots | Learn C++ with Us
+    </footer>
+    <!-- Chatbase widget -->
+<script>
+  (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) };window.chatbase=new Proxy(window.chatbase,{get(target, prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="PFEDVxqYF7Mdy24s36Hf1";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load", onLoad)}})();
+</script>
+</body>
+</html>
